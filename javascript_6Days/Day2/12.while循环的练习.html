@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while循环的练习</title>
+    <script>
+        //求6的阶乘
+        // var i = 1;
+        // var sum = 1;
+        // while (i <= 6) {
+        //     sum *= i;
+        //     i++;
+        // }
+        // console.log("sum = " + sum);
+
+        //求1~100的偶数和
+        // var i = 2;
+        // var sum = 0;
+        // while (i <= 100) {
+        //     sum += i;
+        //     i += 2;
+        // }
+        // console.log("1~100的偶数和为" + sum);
+
+        //求1~100的奇数和
+        // var i = 1;
+        // var sum = 0;
+        // while(i<=100){
+        //     sum+=i;
+        //     i+=2;
+        // }
+        // console.log("1~100的奇数和为" + sum);
+
+
+        //请输出1~100之间所有能被7整除的数字（明凯没有了啊啊啊啊）
+        // var i = 1;
+        // while(i<=100){
+        //     //判断是否能被7整除
+        //     if(i%7==0){
+        //        console.log(i);
+        //     }
+        //     i++;
+        // }
+
+
+        //求帐号和密码是否一致,登录的效果实现
+        //提示用户输入帐号
+        //提示用户输入密码
+        //如果帐号或者密码不对,则一直提示用户输入帐号和密码
+        //帐号--admin
+        //密码--123---字符串类型
+
+        var userName=prompt("请您输入帐号");//存储帐号的
+        var userPwd=prompt("请您输入密码");//存储密码
+        while(userName!="admin"||userPwd!="123"){
+            //变量的重新赋值
+            userName=prompt("输入错误，请您重新输入帐号");//存储帐号的
+            userPwd=prompt("请您输入密码");//存储密码
+        }
+        alert("登录成功");
+        //
+
+
+        //变量可以重新赋值
+
+        //    var num=10;
+        //    console.log(num);//10
+        //    num=100;//变量的重新赋值
+        //    console.log(num);//100
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

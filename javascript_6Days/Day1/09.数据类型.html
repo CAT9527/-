@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //声明变量并初始化
+        var num = 10;
+
+        //那么问题来了
+        //js的数据类型有哪些呢
+        //答：number,string,boolean,null,undefined,object
+        /*
+        * number:数字类型（整数和小数）
+        * string：字符串类型（使用单引号或者双引号）
+        * boolean:布尔类型（只有两个值，true，false）
+        * null：空类型（只有null一个值），一个对象指向空了，就可以指定为null
+        * undefined：未定义，只有undefined一个值
+        *    什么情况下的结果是undefined？
+        *       1.变量声明了，没有赋值，结果是undefined
+        *       2.函数没有明确返回值，如果接受了，也是undefined
+        *    如果一个变量的结果是undefined和一个数字的计算，结果是NaN，不是数字，结果没有意义
+        * Object:对象类型
+        **/
+
+        // var num;
+        // console.log(num + 10);//NaN---Not a Number，没有意义
+
+        //如果获取这个变量的数据类型,
+        // 格式：typeof 变量名( 或者 typeof(变量名) ，括号可加可不加)
+        var num = 10;
+        var str = "faker";
+        var flag = true;
+        var nul = null;
+        var undef;
+        var obj = new Object();
+        console.log(typeof num);  //number
+        console.log(typeof str);  //string
+        console.log(typeof flag); //boolean
+        console.log(typeof nul);  //不是null，而应该是object
+        console.log(String(nul)); //null
+        console.log(typeof undef);//undefined
+        console.log(typeof obj);  //object
+
+        console.log("10");
+        console.log(10);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

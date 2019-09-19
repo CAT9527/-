@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js的注意问题</title>
+    <script>
+        /*
+        * 1.在一对script的标签中存在错误的js代码，那么该错误代码后面的代码全部不执行
+        * 2.如果第一对的script标签中又错误，不会影响后面的script标签对中的代码执行
+        * 3.script标签中可以写的内容：
+        * type = "text/javascript"
+        * language = "javascript"
+        * 但是这两个都可以省略
+        * 4. 有可能出现这种情况，script标签中同时出现上面两个情况，都是允许的，是负责兼容一些问题
+        * <script type = "text/javascript" language = "javascript">
+        *
+        *  5.script标签在页面中可以出现多个
+        *  6.script标签一般放在body的标签的最后面 ，有时候会在head标签中
+        *  7.如果script标签是引入外部文件的作用，那么这个script标签里面不要写任何内容，非要写的话，就重新写一对script
+        *    标签，在里面写代码
+        * */
+    </script>
+</head>
+<body>
+
+</body>
+</html>

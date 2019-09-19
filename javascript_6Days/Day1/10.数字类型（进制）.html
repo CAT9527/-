@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数字类型</title>
+    <script>
+        // var num = 12;
+        /*
+        * 数字类型：整数和小数
+        *所有数字都属于number类型
+        * 其他的语言：
+        * 整数类型：int
+        * 单精度浮点型：float
+        * 双精度浮点型：double
+        *
+        * 数字：
+        * 二进制：遇2进1
+        *        1：00000001
+        *        2：00000010
+        *        3：00000011
+        *        4：00000100
+        *
+        * 八进制：遇8进1 ，以0开头的都是八进制
+        *        1：00000001
+        *        2：00000002
+        *        3：00000003
+        *        4：00000004
+        *        5：00000005
+        *        6：00000006
+        *        7：00000007
+        *        8：00000010
+        *        9：00000011
+        *        10：00000012
+        *
+        * 十进制：生活使用的就是
+        *
+        * 十六进制：遇到f进1，以0x开头的都是十六进制
+        *        1：00000001
+        *        .....
+        *        9：00000009
+        *       10：0000000a
+        *       11：0000000b
+        *       12：0000000c
+        *       13：0000000d
+        *       14：0000000e
+        *       15：0000000f
+        *       16：00000010
+        *       17：00000011
+        * */
+
+        /*
+        * js中可以表现哪些进制：
+        * var num = 10;  //十进制
+        * var num2 = 012;  //八进制
+        * var num3 = 0x123; //十六进制
+        * */
+
+        // var num = 12;
+        // console.log(num);
+        // var num2 = 012;
+        // console.log(num2);
+        // var num3 = 0x1a;
+        // console.log(num3);
+    </script>
+
+    <script>
+        //数字类型有范围:最大值和最小值
+        // console.log(Number.MAX_VALUE);
+        // console.log(Number.MIN_VALUE);
+
+        //不要用小数去验证小数，
+        //如下所示：c不等于0.3，而是0.30000000000000004；
+        // var a = 0.1;
+        // var b = 0.2;
+        // var c = a + b;
+        // console.log(c);
+        // console.log(c == 0.3); //false
+
+        //2.不要用NaN去验证NaN
+        //因为num不是数字，NaN也不是数字，都没有意义，所以不相等
+        // var num;
+        // console.log(num + 10 == NaN);//false
+        // console.log("你好" == "您好");//false
+
+        //验证NaN的方式：isNaN()
+        //判断不是一个数字可以用isNaN
+        var num;
+        console.log(isNaN(num));      //true
+        console.log(isNaN(num + 10)); //显示true，
+        console.log(isNaN(10));      //false,因为10是数字
+        console.log(isNaN("你哈"));  //true
+    </script>
+</head>
+<body>
+
+</body>
+</html>
