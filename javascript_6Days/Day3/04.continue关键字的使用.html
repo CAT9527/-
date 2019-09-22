@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>continue关键字的使用</title>
+    <script>
+        //continue:在循环中如果遇到continue关键字,直接开始下一次循环
+        // var i = 0;
+        // while(i<10){
+        //     console.log("asdsa");
+        //     continue;
+        //     i++;  //前面使用了continue直接运行下一次循环，这行代码被跳过了（死循环）
+        // }
+
+        //案例：求100—200之间所有奇数的和
+        // var sum = 0;
+        // var i = 100;
+        // while(i<=200){
+        //     //判断是否为偶数
+        //     if(i%2==0){
+        //         //是偶数，自增1并跳出循环
+        //         i++;
+        //         continue;
+        //     }
+        //     sum += i;
+        //     i++;
+        // }
+        // console.log(sum);
+
+        //案例:求整数100～200的累加值，但要求跳过所有个位为3的数
+        var sum = 0;
+        var i = 100;
+        while(i<=200){
+            if(i%10==3){
+                i++;
+                continue;
+            }
+            sum +=i;
+            i++;
+        }
+        console.log(sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

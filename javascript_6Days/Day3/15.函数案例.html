@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>函数案例</title>
+    <script>
+        //求两个数字的和:获取任意的两个数字的和
+        function getSum(x, y) {
+            return x + y;
+        }
+
+        console.log(getSum(1, 2));
+
+        //求1-100之间所有的数字的和
+        function getEverySum() {
+            var sum = 0;
+            for (var i = 0; i <= 100; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        console.log(getEverySum());
+
+        //- 求1-n之间所有数的和
+        function getnSum(n) {
+            var sum = 0;
+            for (var i = 0; i <= n; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        console.log(getnSum(10));
+
+        //- 求n-m之间所有数的和
+        function geteverySum2(n, m) {
+            var sum = 0;
+            for (var i = n; i <= m; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        console.log(geteverySum2(1, 100));
+
+        //    - 求n-m之间所有数的和
+
+
+        function geteverySum2(n, m) {
+            var sum = 0;
+            for (var i = n; i <= m; i++) {
+                sum += i;
+            }
+            return sum;
+        }
+
+        console.log(geteverySum2(1, 100));
+
+
+        //    - 求2个数中的最大值
+        function getMaxInTwo(x, y) {
+            if (x > y)
+                return x;
+            else
+                return y;
+        }
+
+        console.log(getMaxInTwo(1, 100));
+
+        //    - 求3个数中的最大值
+        function getMaxInThree(x, y, z) {
+            var arr = [x, y, z];
+            var max = x;
+            for (var i = 1; i < 3; i++) {
+                if (max < arr[i]) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+
+        console.log(getMaxInThree(1, 25, 12));
+
+        // - 判断一个数是否是素数(质数)
+        function getSuShu(x) {
+            if (x == 1) {
+                return false;
+            }
+            for (var i = 2; i <= x; i++) {
+                if (x % i == 0)
+                    return false;
+                else
+                    return true;
+            }
+        }
+
+        console.log(getSuShu(3));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
