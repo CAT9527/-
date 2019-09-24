@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义构造函数创建对象</title>
+    <script>
+        //自定义构造函数创建对象,我要自己定义一个构造函数,自定义构造函数,创建对象
+        //函数和构造函数的区别；名字是不是大写(首字母是大写)
+        function Person(name,age) {
+            this.name = name;
+            this.age = age;
+            this.sayHi = function () {
+                console.log(this.name + " , " + this.age);
+            };
+        }
+
+        var obj = new Person("小明",30);
+        console.log(obj.name);
+        console.log(obj.age);
+        obj.sayHi();
+
+        var obj2 = new Person("faker",22);
+        console.log(obj2.name);
+        console.log(obj2.age);
+        obj2.sayHi();
+
+        console.log(typeof obj);  //还是Object
+        console.log(obj instanceof Person);
+        console.log(obj instanceof Person);
+
+        //自定义狗的构造函数,创建对象
+        function Dog(name,age,sex) {
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+        }
+        var dog=new Dog("大黄",20,"男");
+        console.log(dog instanceof Person);//false
+        console.log(dog instanceof Dog);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

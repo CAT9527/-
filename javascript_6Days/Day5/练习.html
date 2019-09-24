@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //1.实现函数callIt
+        function callIt(fn) {
+            console.log(fn(arguments[1], arguments[2]));
+        }
+
+        callIt(function (a, b) {
+            return a + b
+        }, 2, 3); //5
+
+        //2.实现fizzBuzz函数
+        function fizzBuzz(num) {
+            if (num == "" || isNaN(num)) {
+                console.log("false");
+            }
+            if (num % 3 == 0 && num % 5 == 0) {
+                return console.log("fizzbuzz");
+            } else if (num % 3 == 0) {
+                return console.log("fizz")
+            } else if (num % 5 == 0) {
+                return console.log("buzz");
+            } else if (num == "" || isNaN(num)) {
+                return false;
+            } else {
+                return num;
+            }
+        }
+
+        fizzBuzz(15);//fizzbuzz
+
+        //3.statical函数
+        function statical(str) {
+            str = str.toLocaleString();
+            var obj = {};
+            for (var i = 0; i < str.length; i++) {
+                var key = str[i];
+                if (obj[key]) {
+                    obj[key]++;
+                } else {
+                    obj[key] = 1;
+                }
+            }
+            var strSum = "";
+            for (var key in obj) {
+                strSum += key + ":" + obj[key] + ",";
+            }
+            strSum = strSum.substring(0, strSum.length - 1);
+            console.log("{" + strSum + "}");
+        }
+
+        statical('aaaabbbcccccciii');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

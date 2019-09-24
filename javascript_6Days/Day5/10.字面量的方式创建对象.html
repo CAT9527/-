@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字面量的方式创建对象</title>
+    <script>
+        var obj={};
+        obj.name="小白";
+        obj.age=10;
+        obj.sayHi=function () {
+            console.log("我是:"+this.name);
+        };
+        obj.sayHi();
+
+        //如果非要使用字面量的方式创建对象，建议使用下面的方式
+        var obj2={
+            name:"小明",
+            age:20,
+            sayHi:function () {
+                console.log("我是:"+this.name);
+            },
+            eat:function () {
+                console.log("吃了");
+            }
+        };
+        obj2.sayHi();
+        obj2.eat();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>工厂模式常见对象</title>
+    <script>
+        /*
+        *
+        * 如何获取该变量（对象）是不是属于该类型的
+        * 变量 instanceof 类型，结果是布尔类型
+        * */
+        //人的对象
+        // var person = new Object();
+        // person.name = "xiao";
+        // person.age = 10;
+        // person.sayHi = function () {
+        //     console.log("你好啊，我叫" + this.name);
+        // }
+        //
+        // //学生的对象
+        // var stu = new Object();
+        // stu.name = "faker";
+        // stu.age = 16;
+        // stu.rank = function () {
+        //     console.log("王者1300分");
+        // }
+        //
+        // //小狗的对象
+        // var dog = new Object();
+        // dog.name = "小黄";
+        // dog.say = function () {
+        //     console.log("wangwang");
+        // }
+        //
+        // console.log(person instanceof Object);
+        // console.log(stu instanceof Object);
+        // console.log(dog instanceof Object);
+
+        //对象不能分辨出到底属于什么类型的
+
+        //如何一次性创建多个对象呢，把创建对象的代码封装到一个函数中
+
+        // function createrObject(){
+        //     var obj = new Object();
+        //     obj.name = "小虎";
+        //     obj.age = 10;
+        //     obj.sayHi = function(){
+        //         console.log("你好");
+        //     };
+        //     return obj;
+        // }
+        // var per1 = new createrObject();
+        // per1.sayHi();
+
+        function createObject(name, age) {
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayHi = function () {
+                console.log("我的名字是" + name + "，我今年" + age + "岁");
+            };
+            return obj;
+        }
+
+        var per1 = createObject("小法", 18);
+        per1.sayHi();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

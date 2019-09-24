@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>另外一种写法</title>
+    <script>
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+            this.play = function(){
+              console.log("喜欢玩游戏");
+            };
+        }
+        var obj = new Person("kakk",20);
+        // obj.name = "佐助";
+
+        obj["name"] = "佐助";
+        obj["play"]();
+        console.log(obj.name);
+        // console.log(obj.age);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
