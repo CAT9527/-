@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>预解析</title>
+    <script>
+        //预解析：提前解析代码
+        /*
+         * 预解析:就是在解析代码之前
+         * 预解析做什么事?
+         * 把变量的声明提前了----提前到当前所在的作用域的最上面
+         * 函数的声明也会被提前---提前到当前所在的作用域的最上面
+         * */
+
+        //相当于将变量num的声明提前了,var num;提前到当前所在的作用域的最上面
+        var num;
+        console.log(num);  //没有报错---num
+        num = 10;
+
+
+        //相当于将函数的声明被提前了，提前到当前所在的作用域的最上面
+        f1();
+        function f1(){
+            console.log("ahsdua");
+        }
+
+        //把变量的声明提前了
+        //    var num;
+        //    console.log(num);
+        //    num=10;
+        //    function f1() {
+        //      console.log("sdaf");
+        //    }
+        //f1();//报错
+
+
+
+        //函数调用的时候,把会函数的声明提升到作用域的上面
+        //    f1();//调用
+        //    var num=20;//这个变量的声明会提升到变量使用之前
+        //    function f1() {
+        //      console.log(num);
+        //      //var num=10;
+        //    }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
