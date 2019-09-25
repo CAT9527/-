@@ -18,15 +18,32 @@
         // }
 
         //JSON格式的数据：一般都是成对的，是键值对
+        //json也是一个对象，数据都是成对的，一般json格式的数据无论是键还是值都使用双引号括起来
+
         // var obj = {
         //     name:"faker",
         //     age:10
         // };
 
         var json = {
-            name:"The shy",
-        }
+            "name":"faker",
+            "age":"10",
+            "sex":"男"
+        };
+        //遍历对象是不能通过for循环遍历的，因为无序
 
+        var key = "name";
+        console.log(json[key]);
+
+        console.log(json.sadasd);//undefined，因为json .sadasd声明了但未赋值
+
+        //但是可以使用for-in循环遍历
+        //key是一个变量，该变量存储的是该对象所有属性的名字
+        for(var key in json){
+            console.log(key);        //json对象的名字
+            //console.log(json.key); //undefined
+            console.log(json[key]);
+        }
     </script>
 </head>
 <body>
