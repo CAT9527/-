@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date对象</title>
+    <script>
+        //创建实例对象
+        //什么都不传
+        //var date = new Date();
+        //当前的时间---当前的服务器
+        //console.log(date);
+
+        //传个时间的字符串，格式一定得标准
+        //2019-9-24  2019,9,24  2019/9/24
+        // var dt1 = new Date("2019-9-24");
+        //
+        // console.log(dt1);
+        //
+        // var dt2 = new Date("2019/9/23");
+        // console.log(dt2);
+        //
+        // var dtn = Date.now();
+        // console.log(dtn);
+
+        //注意，外国人的想法是将星期日当成一个星期的第一天
+        //并且一月份是从0数起
+        // //所以不管是星期还是月份的索引都是从0开始
+        // var dt = new Date();
+        // //获取年份
+        // console.log(dt.getFullYear());
+        // //获取月份
+        // console.log(dt.getMonth()+1);//这个月份是从0开始的，所以要加1
+        // //获取日期
+        // console.log(dt.getDate());
+        // //获取小时
+        // console.log(dt.getHours());
+        // //获取分种
+        // console.log(dt.getMinutes());
+        // //获取秒
+        // console.log(dt.getSeconds());
+        // //获取星期
+        // console.log(dt.getDay()+1); //0 1 2 3 4 5 6
+
+
+        var dt = new Date();
+        // console.log(dt.toDateString());//英文的日期格式
+        // console.log(dt.toLocaleDateString());//中文的日期格式
+
+        console.log(dt.toTimeString());//英文的日期格式
+        console.log(dt.toLocaleTimeString());//中文的日期格式
+
+        console.log(dt.valueOf());//毫秒值
+        // console.log(dt);
+        // //转换成字符串
+        // console.log(dt.toString());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
