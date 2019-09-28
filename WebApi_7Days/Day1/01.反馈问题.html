@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = [20, 10, 45, 20];
+
+
+        //对象，对象调用这个方法可以实现排序功能，跟数组的sort方法相同
+        function MyArray() {
+            this.mysort = function (arr) {
+                for (var i = 0; i < arr.length; i++) {
+                    for (var j = 0; j < arr.length - 1; j++) {
+                        if (arr[j] > arr[j + 1]) {
+                            var temp = arr[j];
+                            arr[j] = arr[j + 1];
+                            arr[j + 1] = temp;
+                        }
+                    }
+                }
+            };
+        }
+
+        var myArray = new MyArray();
+        myArray.mysort(arr);
+        console.log(arr);
+
+        var arr1 = [20, 10, 45, 20];
+        function clearArr(arr) {
+            arr.length = 0;
+        }
+        clearArr(arr1);
+        console.log(arr1);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

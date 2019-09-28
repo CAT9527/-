@@ -109,9 +109,18 @@
         //    //str=str.toUpperCase();
         //    console.log(str);
 
-        var str="   哦,这    是一个神奇的一天   ";
-        str=str.trim();
-        console.log("===="+str+"====");
+        // var str="   哦,这    是一个神奇的一天   ";
+        // str=str.trim();
+        // console.log("===="+str+"====");
+
+        var output = (function(x)
+            {
+                delete x;
+                return x;
+            }
+        )(0);
+        console.log(output);
+
     </script>
 </head>
 <body>
