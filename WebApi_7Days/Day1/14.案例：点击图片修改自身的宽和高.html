@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击案例修改自身的宽和高</title>
+
+</head>
+<body>
+<img src="images/1.jpg" alt="" id="im">
+<script>
+    var imgObj = document.getElementById("im");
+    imgObj.onclick = function () {
+        this.width = "100";
+        this.height = "100";
+    };
+</script>
+</body>
+</html>

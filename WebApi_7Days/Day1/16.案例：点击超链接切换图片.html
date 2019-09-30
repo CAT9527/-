@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="images/1.jpg" id = "ak"><img src="images/1-small.jpg" alt="" id = "im"></a>
+<script>
+    //点击图片标签，设置图片标签路径为超链接大图的路径
+    document.getElementById("im").onclick = function(){
+        this.src = document.getElementById("ak").href;
+        return false;//这样就是没有跳转超链接，而是直接改变img的图片路径。
+    };
+</script>
+</body>
+</html>
