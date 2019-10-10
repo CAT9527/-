@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置和获取文本框的值</title>
+</head>
+<body>
+<input type="text" value="文本框" id="txt">
+<input type="button" value = "按钮" id="btn">
+<p>这是p</p>
+<script src="common.js"></script>
+<script>
+    my$("btn").onclick = function () {
+        this.value = "hah";
+        // console.log(this.value);
+        // console.log(this.type);
+        // console.log(this.id);
+        console.log(document.getElementsByTagName("p")[0].innerText);
+    }
+</script>
+</body>
+</html>

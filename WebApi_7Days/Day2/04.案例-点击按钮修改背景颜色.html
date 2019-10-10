@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击按钮修改背景颜色</title>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn">
+<ul id = "ch">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<script>
+    document.getElementById("btn").onclick = function(){
+        document.getElementById("ch").style.backgroundColor = "skyblue";
+    }
+</script>
+</body>
+</html>

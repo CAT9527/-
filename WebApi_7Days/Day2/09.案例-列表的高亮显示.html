@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表的高亮显示</title>
+    <style>
+        ul{
+            list-style-type: none;
+            cursor: pointer;
+            width: 300px;
+            height: 300px;
+        }
+        li{
+            float: left;
+            display: inline-block;
+            width: 200px;
+            height: 25px;
+            line-height: 25px;
+
+        }
+    </style>
+</head>
+<body>
+<ul id="uu">
+    <p>SKT 2019全球总决赛首发名单:</p>
+    <li>上单：Khan</li>
+    <li>打野：Clid</li>
+    <li>中单：Faker</li>
+    <li>下路：Teddy</li>
+    <li>辅助：Effort</li>
+    <li>替补打野：Haru</li>
+    <li>替补辅助：Mata</li>
+</ul>
+
+<script src = "common.js"></script>
+<script>
+    //鼠标进入和离开两个事件
+    //获取所有的li标签
+    var listObj = document.getElementsByTagName("li");
+    for (var i = 0;i<listObj.length;i++){
+
+        //鼠标进入事件
+        listObj[i].onmouseover = function(){
+            //不应该使用listObj[i],而应该是this
+           this.style.backgroundColor = "red";
+        }
+
+        //鼠标离开事件
+        listObj[i].onmouseleave = function(){
+            this.style.backgroundColor = "";
+        }
+    }
+</script>
+</body>
+</html>

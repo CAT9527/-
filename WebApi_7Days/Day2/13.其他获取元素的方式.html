@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>其他获取元素的方式</title>
+    <style>
+        .cls{
+            background-color: #35adeb;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value = "显示效果" id="btn">
+<p>这是一个P</p>
+<p class="cls">这是另外一个P</p>
+<span>这是一个span</span>
+<span class="cls">这是一个span</span>
+
+<script src="common.js"></script>
+<script>
+
+    //点击按钮弹出对话框
+
+    //1.根据选择器获取元素
+    // var btnObj = document.querySelector("#btn");
+    // btnObj.onclick = function(){
+    //     alert("可以，点击到了");
+    // }
+
+    my$("btn").onclick = function(){
+        var btnObj = document.querySelectorAll(".cls");
+        for(var i = 0;i<btnObj.length;i++){
+            btnObj[i].style.backgroundColor = "red";
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>阻止超链接跳转</title>
+</head>
+<body>
+<script>
+    //阻止超链接弹出对话框
+
+    //阻止超链接的默认跳转：return false
+</script>
+<!--第一种写法-->
+<a href="http://www.baidu.com" onclick="alert('我被点击了'); return false;">百度</a>
+
+<!--第二种写法-->
+<script>
+    function f1() {
+        alert("我被点击了");
+        return false;
+    }
+
+    //onclick="return f1()",
+    // 之所以这样写是因为f1()本身返回的是false，
+    // 而不是”return false“，所以要在前面加一个return
+</script>
+<a href="http://www.baidu.com" onclick="return f1()">百度</a>
+
+
+<!--第三种写法-->
+<a href="http://www.baidu.com" id="ak">百度</a>
+<script>
+    document.getElementById("ak").onclick = function () {
+        alert("sda");
+        return false;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表隔行变色</title>
+</head>
+<body>
+<input type="button" value="隔行变色" id="btn">
+<ul id="skt">
+    <li>komma</li>
+    <li>faker</li>
+    <li>teddy</li>
+    <li>mata</li>
+    <li>clid</li>
+    <li>khan</li>
+    <li>effort</li>
+    <li>zafa</li>
+</ul>
+
+<script src="common.js"></script>
+<script>
+    my$("btn").onclick = function () {
+        //获取所有的li元素
+        var list = my$("skt").getElementsByTagName("li");
+        for (var i = 0; i < list.length; i++) {
+            // if (i % 2 == 0) {
+            //     list[i].style.backgroundColor = "red";
+            // }else{
+            //     list[i].style.backgroundColor = "skyblue";
+            // }
+
+            //使用三元运算符
+            list[i].style.backgroundColor = i % 2 == 0 ? "red" : "skyblue";
+        }
+    }
+</script>
+</body>
+</html>

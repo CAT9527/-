@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div高亮显示</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        div{
+            width: 200px;
+            height: 150px;
+            background-color: skyblue;
+            float: left;
+            margin-left: 10px;
+            border:2px solid skyblue;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<script src="common.js"></script>
+<script>
+
+    var divObj = document.getElementsByTagName("div");
+
+    for(var i = 0;i<divObj.length;i++){
+        //鼠标进入
+        divObj[i].onmouseover = function(){
+            this.style.border = "2px solid red";
+        }
+        //鼠标离开
+        divObj[i].onmouseout = function(){
+            this.style.border = "";
+        }
+    }
+</script>
+</body>
+</html>
