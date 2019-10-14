@@ -4,95 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/04.案例-点击按钮修改背景颜色.html" line="16" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb8af9df-e497-4272-93a2-b3eca877330c" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.复习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.课程介绍、.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03.案例-点击按钮禁用文本框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.案例-点击按钮修改背景颜色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05.案例-阻止超链接跳转.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.案例-点击小图切换大图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.案例-美女相册.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08.案例-列表隔行变色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.案例-列表的高亮显示.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.案例-显示和隐藏二维码.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11.根据name属性值获取元素.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.根据类样式的名字来获取元素.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.其他获取元素的方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14.总结获取元素的方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15.案例--div高亮显示.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16.案例--模拟搜索框.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17.案例-验证文本框密码长度.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18.案例-设置和获取文本框的值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19.innerText和textContent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.innerText和innerHtml的区别.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21.自定义属性引入.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22.自定义属性设置和获取.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23.移除某个元素的自定义属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24.tab切换案例实现.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/0f000PC3L7v5WMl_8bcCX6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/111.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/222.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/3-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/333.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/4-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/456.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/5-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bgs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bird.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/birdfly.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/boduo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bpic_1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cangjingkong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cloud.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/content_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/libai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/linzhiling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/liuyan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noavatar_small.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/right.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/search.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/taobao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tianshi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tip1_c.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tip1_f.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tip1_h.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/xiaoniao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/卡卡西.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/大蛇丸.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/百度换肤.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day1/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cb8af9df-e497-4272-93a2-b3eca877330c" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -106,13 +18,14 @@
     <session id="335438187">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.29" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -148,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15.案例--div高亮显示.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="570">
+              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -157,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/16.案例--模拟搜索框.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
+            <state relative-caret-position="990">
               <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
             </state>
           </provider>
@@ -166,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/17.案例-验证文本框密码长度.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="450">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -176,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/18.案例-设置和获取文本框的值.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -184,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/19.innerText和textContent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="1140">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -193,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/20.innerText和innerHtml的区别.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="1590">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
@@ -202,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/21.自定义属性引入.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="480">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -211,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/22.自定义属性设置和获取.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="720">
+              <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -220,7 +133,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/23.移除某个元素的自定义属性.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="720">
               <caret line="24" selection-start-line="24" selection-end-line="25" />
             </state>
           </provider>
@@ -229,8 +142,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/24.tab切换案例实现.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+            <state relative-caret-position="-1140">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -307,7 +220,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,6 +231,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,17 +275,17 @@
       <workItem from="1570515735916" duration="5959000" />
       <workItem from="1570624282125" duration="4173000" />
       <workItem from="1570664148714" duration="8759000" />
+      <workItem from="1570779803790" duration="46000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21263000" />
+    <option name="totallyTimeSpent" value="21309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="552" y="0" width="1374" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22029251" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22005989" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -445,10 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,71 +426,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/15.案例--div高亮显示.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="570">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/16.案例--模拟搜索框.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
+        <state relative-caret-position="990">
           <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/17.案例-验证文本框密码长度.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/18.案例-设置和获取文本框的值.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/19.innerText和textContent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="1140">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/20.innerText和innerHtml的区别.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="1590">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/21.自定义属性引入.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="480">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/22.自定义属性设置和获取.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        <state relative-caret-position="720">
+          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/23.移除某个元素的自定义属性.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
+        <state relative-caret-position="720">
           <caret line="24" selection-start-line="24" selection-end-line="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/24.tab切换案例实现.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
+        <state relative-caret-position="-1140">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
         </state>
       </provider>
     </entry>
