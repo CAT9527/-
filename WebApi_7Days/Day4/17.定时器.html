@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定时器</title>
+
+
+</head>
+<body>
+<input type="button" value = "停止" id = "btn">
+<script>
+    //BOM有两个定时器
+
+    //定时器
+    //参数1：函数
+    //参数2：事件---毫秒----1000毫秒--1秒
+    //执行过程:页面加载完毕后，过了一秒，执行一次函数代码，又过了一秒，继续执行
+
+    //返回值是定时器的ID
+    var timeId = setInterval(function () {
+        alert("faker NB");
+    }, 3000);
+
+    document.getElementById("btn").onclick = function(){
+        //点击按钮，停止定时器
+        //参数：要清理的定时器id的值
+        window.clearInterval(timeId);
+    }
+</script>
+</body>
+</html>

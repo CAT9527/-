@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一闪一闪亮晶晶</title>
+    <style>
+        div {
+            width: 600px;
+            height: 600px;
+            border: 2px solid red;
+            background-color: black;
+            position: relative;
+        }
+
+        span {
+            position: absolute;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+<div id="dv"></div>
+<script src="common.js"></script>
+<script>
+
+    my$("btn").onclick = function () {
+        setInterval(function () {
+            my$("dv").innerHTML = "<span>★</span>";
+            var x = parseInt(Math.random() * 600 + 1);
+            var y = parseInt(Math.random() * 600 + 1);
+            my$("dv").firstElementChild.style.left = x + "px";
+            my$("dv").firstElementChild.style.top = y + "px";
+        }, 100);
+
+    }
+</script>
+</body>
+</html>

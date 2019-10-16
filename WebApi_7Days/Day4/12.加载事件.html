@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //页面加载完毕再获取按钮
+
+        //页面加载事件：window.onload
+        //只要页面加载完毕，这个事件就会触发---页面所有的内容，标签，属性，文本，外部引入的js文件
+        // window.onload = function(){
+        //     document.getElementById("btn").onclick = function(){
+        //         console.log("nihaoa");
+        //     }
+        // }
+
+        //window可以省略
+        //onload事件极其重要
+        // onload = function () {
+        //     document.getElementById("btn").onclick = function () {
+        //         console.log("nihaoa");
+        //     }
+        // };
+
+
+        //扩展事件---页面关闭之后才触发的事件
+        // window.onunload = function(){
+        //     alert("hah");
+        // };
+
+        //扩展事件---页面关闭之前才触发的事件
+        window.onbeforeunload = function(){
+            alert("hah");
+        };
+
+    </script>
+</head>
+<body>
+<input type="button" value="按钮" id="btn">
+</body>
+</html>

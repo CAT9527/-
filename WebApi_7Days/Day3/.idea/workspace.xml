@@ -1,98 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e415fe7-440f-4f74-972b-916981986830" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/01.复习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.课程介绍.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03.节点的介绍.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.节点的相关属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05.获取相关的节点.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.获取相关的节点.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.获取相关节点.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08.案例点击按钮设置div中p标签改变背景颜色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.案例--节点操作隔行变色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.节点的兼容代码.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11.案例切换背景图片.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.案例全选和全不选的实现.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.元素创建的不同方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14.第一种元素创建的方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15.第二种元素创建方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16.案例点击按钮创建一个图片.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17.案例点击按钮创建列表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18.扩展的页面中嵌入广告.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19.第三种元素创建方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.案例动态创建列表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21.案例点击按钮创建一个表格.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22.元素相关的方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23.只创建一个元素.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24.为元素绑定事件的引入.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25.为元素绑定多个事件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/26.为元素绑定事件兼容代码.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/0f000PC3L7v5WMl_8bcCX6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/111.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/222.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/3-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/333.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/4-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/456.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/5-small.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bgs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bird.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/birdfly.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/boduo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/bpic_1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cangjingkong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cloud.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/content_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/default.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/lb5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/left.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/libai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/linzhiling.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/liuyan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/noavatar_small.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/placeholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/right.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/rss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/search.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/taobao.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tianshi.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tip1_c.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tip1_f.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tip1_h.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/xiaoniao.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/卡卡西.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/大蛇丸.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/百度换肤.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmer1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programmer2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day2/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6e415fe7-440f-4f74-972b-916981986830" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -106,12 +15,13 @@
     <session id="138924683">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -147,7 +57,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/19.第三种元素创建方式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8">
+            <state relative-caret-position="480">
               <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
@@ -156,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/20.案例动态创建列表.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="840">
               <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
             </state>
           </provider>
@@ -165,7 +75,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/21.案例点击按钮创建一个表格.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="990">
               <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
             </state>
           </provider>
@@ -174,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/22.元素相关的方法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="630">
               <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
             </state>
           </provider>
@@ -183,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/23.只创建一个元素.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="660">
               <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
             </state>
           </provider>
@@ -201,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/25.为元素绑定多个事件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
+            <state relative-caret-position="960">
               <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
             </state>
           </provider>
@@ -210,7 +120,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/26.为元素绑定事件兼容代码.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-758">
+            <state relative-caret-position="30">
               <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
             </state>
           </provider>
@@ -295,20 +205,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Day3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Day3" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -350,11 +247,12 @@
       <workItem from="1570846059260" duration="599000" />
       <workItem from="1570866314105" duration="8499000" />
       <workItem from="1571014126083" duration="5577000" />
+      <workItem from="1571069085721" duration="217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16473000" />
+    <option name="totallyTimeSpent" value="16690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="825" y="0" width="1096" height="1047" extended-state="0" />
@@ -500,9 +398,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,36 +424,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/19.第三种元素创建方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
+        <state relative-caret-position="480">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/20.案例动态创建列表.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="840">
           <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/21.案例点击按钮创建一个表格.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="990">
           <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/22.元素相关的方法.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="630">
           <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/23.只创建一个元素.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="660">
           <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/24.为元素绑定事件的引入.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/25.为元素绑定多个事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -576,23 +485,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/24.为元素绑定事件的引入.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/25.为元素绑定多个事件.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/26.为元素绑定事件兼容代码.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-758">
+        <state relative-caret-position="30">
           <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
         </state>
       </provider>
