@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>另外一个定时器</title>
+</head>
+<body>
+<input type="button" value="停下" id="btn">
+<script>
+
+    //常用定时器，可以反复执行
+    // window.setInterval(function () {
+    //     alert("执行")
+    // }, 100);
+
+    //清理定时器
+    // window.clearInterval(定时器id);
+
+    //另外一个定时器，一次性的定时器
+
+    /*
+    *  参数1：函数
+    *  参数2：时间----1000毫秒---1秒
+    *
+    *  返回值：该定时器的id
+    *
+    * */
+
+    // window.setTimeout(函数，时间);
+
+    //页面加载之后
+    window.onload = function(){
+        //一次性的定时器
+        var timeID = window.setTimeout(function(){
+            alert("你好");
+        },1000);
+    };
+</script>
+</body>
+</html>
