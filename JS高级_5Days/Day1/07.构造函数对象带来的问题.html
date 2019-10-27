@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>构造函数创建对象带来的问题</title>
+    <script>
+        // function Person(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        //     this.eat = function () {
+        //         console.log("We eat hamager");
+        //     };
+        // }
+        //
+        // var per1 = new Person("小黑", 20);
+        // var per2 = new Person("小白", 30);
+        //
+        // console.dir(per1);
+        // console.dir(per2);
+
+        // per1.eat();
+        // per2.eat();
+        //
+        // //不是同一个方法
+        // console.log(per1.eat == per2.eat);
+        //
+        // //
+        // for(var i = 0;i<100;i++){
+        //     var per = new Person("sad",300);
+        //     per.eat();
+        // }
+
+        function myEat() {
+            console.log("We eat hamager");
+        }
+
+        //加一个相同名字的变量就会产生错误
+        var myEat = 10;
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.eat = myEat;
+        }
+
+        var per1 = new Person("小黑", 20);
+        var per2 = new Person("小白", 30);
+
+        //是同一个函数
+        console.log(per1.eat == per2.eat);//true
+
+        //上面的也会产生错误
+        //所以通过原型来解决-----数据共享，节省空间
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

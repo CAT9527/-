@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型的简单语法</title>
+</head>
+<body>
+<script>
+    //构造函数
+    function Student(name, age, sex) {
+        this.name = name;
+        this.sex = sex;
+        this.age = age;
+    }
+
+    //原型对象
+    // Student.prototype.height = "170cm";
+    // Student.prototype.weight = "60kg";
+    // Student.prototype.study = function () {
+    //     console.log("学习");
+    // };
+    // Student.prototype.eat = function () {
+    //     console.log("食屎啦你");
+    // };
+
+    //简单的原型写法
+    //这种写法并没有构造器
+    Student.prototype ={
+        //所以需要手动修改构造器指向
+        constructor:Student,
+        height:"199",
+        weight:"60kg",
+        srudy:function(){
+          console.log("sdasdasd");
+        },
+        eat:function(){
+            console.log("dasasa");
+        }
+    };
+
+    var stu = new Student("sdasa",20,"男");
+    stu.eat();
+    console.dir(Student);//没有构造器
+    console.dir(stu);
+
+
+</script>
+</body>
+</html>

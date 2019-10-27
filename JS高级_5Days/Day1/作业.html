@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>作业</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color: gray;
+        }
+        .dv{
+            margin: 50px auto;
+            padding-top: 1px;
+            width: 304px;
+            height: 303px;
+            overflow: hidden;
+            background-color: white;
+        }
+        span {
+            width: 100px;
+            height: 100px;
+            border-left: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            background-color: #4c839d;
+            float: left;
+            color: #fff;
+            font-size: 25px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .clearfix:before,.clearfix:after {
+            content:"";
+            display:table;
+        }
+        .clearfix:after {
+            clear:both;
+        }
+        .clearfix {
+            *zoom:1;
+        }
+    </style>
+</head>
+<body>
+<div class="dv clearfix">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+</div>
+</body>
+</html>

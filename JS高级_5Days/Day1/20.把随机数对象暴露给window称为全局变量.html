@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>把随机数对象暴露给window称为全局变量</title>
+</head>
+<body>
+<script>
+    //通过自调用函数产生一个随即数对象，在自调用函数外面，调用该随即数对象方法产生随即数
+
+    (function(window){
+        //产生随即数的构造函数
+        function Random() {
+
+        }
+
+        Random.prototype.getRandom = function(min,max){
+          return Math.floor(Math.random()*(max-min)+min);
+        };
+        //把Random对象暴露给顶级对象window---》外部可以直接使用这个对象
+        window.random = new Random();
+    })(window);
+
+    var rm = random;
+    var num = rm.getRandom(10,50);
+    console.log(num);
+</script>
+</body>
+</html>

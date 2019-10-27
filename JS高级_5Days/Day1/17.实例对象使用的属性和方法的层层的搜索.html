@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实例对象使用属性和方法层层的搜索</title>
+</head>
+<body>
+<script>
+    function Person(age, sex) {
+        this.age = age;
+        this.sex = sex;
+        this.eat = function () {
+            console.log("构造函数的eat方法");
+        };
+    }
+
+    Person.prototype.sex = "女";
+
+    var per = new Person("faker", "男");
+    console.log(per.sex);//男,搜索首先先从实例对象找，再向原型对象找，直到找到位置
+    console.dir(per);
+
+
+    /*
+     * 实例对象使用的属性或者方法,先在实例中查找,找到了则直接使用,找不到则,去实例对象的__proto__指向的原型对象prototype中找,找到了则使用,找不到则报错
+     * 先实例对象，然后再找原型对象
+     *
+     * */
+</script>
+</body>
+</html>

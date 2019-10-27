@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // //原型的方法是可以相互访问的
+    // function Person(age){
+    //     this.age = age;
+    //     this.sayHi = function(){
+    //         console.log("dasasd");
+    //         this.eat();
+    //     };
+    //     this.eat = function(){
+    //         console.log("食屎啦你");
+    //     };
+    // }
+    //
+    // //实例化对象。并初始化
+    // var per = new Person(20);
+    //
+    // //调用方法
+    // per.sayHi();
+
+
+
+    //原型的方法是可以相互访问的
+    function Animal(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    //原型中添加方法
+    Animal.prototype.eat = function(){
+        console.log("吃狗粮");
+    };
+    Animal.prototype.play = function(){
+        console.log("玩蛇");
+        this.eat();
+
+    };
+    Animal.prototype.sleep = function(){
+        console.log("乖宝宝，睡觉了");
+        this.play();
+    };
+    var dog = new Animal("大黄",20);
+    dog.sleep();
+
+</script>
+</body>
+</html>

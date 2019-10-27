@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建对象的三种方式</title>
+    <script>
+        //对象：特指的某个失误，具有属性和方法（一组无序的属性的集合）
+        //特征----->属性
+        //行为----->方法
+
+
+        //创建对象的三种方式
+
+        //1.字面量的方式
+        //2.调用系统得到构造函数
+        //3.自定义构造函数方式
+
+        //1.字面量
+        var per1 = {
+            name: "sda",
+            age: 21,
+            eat: function () {
+                console.log("吃团子");
+            },
+            readBook: function () {
+                console.log("看情热天堂");
+            }
+        }
+
+        //2.调用系统的构造函数
+        var per2 = new Object();
+        per2.name = "das";
+        per2.age = 12;
+        per2.sex = "男";
+        per2.eat = function () {
+            console.log("tuan");
+        };
+        per2.readBook = function () {
+            console.log("禁书目录");
+        };
+
+        console.log(typeof per2); //object
+
+        //3.自定义构造函数方式
+        function Person(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+            this.readBook = function () {
+                console.log("sadasdas");
+            };
+        }
+        var per3 = new Person("1",21,"nan");
+        console.log(per3 instanceof Person);  //true
+
+
+        // for(var i = 0;i<5;i++){
+        //     // setTimeout(function(){
+        //     //     console.log(i+" ");
+        //     // },100);
+        //     console.log("2"+3+4);
+        // }
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

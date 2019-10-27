@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>为内置对象添加原型方法</title>
+</head>
+<body>
+<script>
+    //为内置对象添加原型方法
+
+    //    var arr=new Array(10,20,30,40,50);
+    //    arr.join("|");
+    //    console.dir(arr);
+    //
+    //
+    //    var str=new String("哦,唛嘎的");
+    //    str.indexOf("哦");
+    //    console.dir(str);
+    //
+    //
+    //    var dt=new Date();
+    //    dt.getFullYear();
+    //    console.dir(dt);
+
+
+
+    //实例对象如果没有方法，去创建实例对象的构造函数的原型对象中寻找
+
+    //我们能否为系统得对象的原型中添加方法，相当于改变源码
+    //我希望字符串中有一个倒叙字符串的方法
+
+    String.prototype.myReverse = function(){
+        var myStr = "";
+        for(var i = this.length-1;i>=0;i--){
+            myStr+=this[i];
+        }
+        console.log(myStr);
+    };
+
+    var str = "adsasd";
+    str.myReverse();
+
+
+    //为Array内置对象的原型对象中添加方法
+    Array.prototype.mySort = function(){
+        for(var i=0;i<this.length-1;i++){
+            for(var j=0;j<this.length-1-i;j++){
+                if(this[j]<this[j+1]){
+                    var temp=this[j];
+                    this[j]=this[j+1];
+                    this[j+1]=temp;
+                }//end if
+            }// end for
+        }//end for
+    };
+
+    var arr = [1213,231,321,213,5546,777,888,788];
+    arr.mySort();
+    console.log(arr);
+</script>
+</body>
+</html>

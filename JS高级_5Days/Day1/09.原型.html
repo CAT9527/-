@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+
+        }
+
+        //通过原型添加方法,解决数据共享，节省内存空间
+        Person.prototype.eat = function () {
+            console.log("我想吃料盘");
+        };
+
+        var p1 = new Person("小明", 20);
+        var p2 = new Person("小红", 70);
+
+        //console.log(p1.eat == p2.eat);//true
+
+        console.dir(p1);
+        console.dir(p2);
+        console.dir(Person);
+
+        console.log(p1._proto_ == Person.prototype);
+
+        //构造函数---》原型对象---》实例对象
+        /**
+         *
+         * 原型
+         * 实例对象中有_proto_属性的就是原型,就叫做原型，是一个属性，也是一个对象，这个属性是给浏览器使用的，不是一个标准的属性-----》_proto_-----》可以叫原型对象
+         *构造函数中有prototype这个属性，叫原型，也是一个对象，这个属性是给程序员使用的，是一个标准的属性----->prototype----》可以叫原型对象
+         * 实例对象的__proto__和构造函数中的prototype相等--->true
+         * 又因为实例对象是通过构造函数来创建的,构造函数中有原型对象prototype
+         * 实例对象的__proto__指向了构造函数的原型对象prototype
+         *
+         */
+
+        //window是对象
+        //document是属性也是一个对象
+        //write()是方法
+
+        //window.document.write("hh");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

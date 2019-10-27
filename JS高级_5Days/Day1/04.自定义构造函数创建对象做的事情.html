@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //工厂模式
+        function createObject(name,age){
+            var obj = new Object();
+            obj.name = name;
+            obj.age = age;
+            obj.sayHi = function(){
+                console.log("hello");
+            };
+            return obj;
+        }
+
+
+
+        //自定义构造函数
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+            this.sayHi = function(){
+                console.log("hello");
+            };
+        }
+
+        //创建对象-----》实例化一个对象，同时对属性进行初始化
+        var per = new Person("小红",20);
+        var per1 = createObject("小明",20);
+        /*
+        * 1.开辟空间存储对象
+        * 2.把this设置位当前的对象
+        * 3.设置属性和方法的值
+        * 4.把this对象返回
+        *
+        *
+        * */
+    </script>
+</head>
+<body>
+
+</body>
+</html>

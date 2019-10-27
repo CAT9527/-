@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			body {
+				background-color: #eee
+			}
+
+			#box {
+				width: 400px;
+				height: 560px;
+				border: 6px solid #CCCCCC;
+				margin: 100px auto;
+				overflow: hidden;
+				position: relative;
+				text-align: center;
+			}
+
+			#box:hover #btn-group {
+				display: block;
+			}
+
+			#box img {
+				width: 100%;
+				height: auto;
+			}
+
+			ul {
+				width: 2000px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			ul li {
+				float: left;
+			}
+
+			#btn-group {
+				position: absolute;
+				width: 100%;
+				height: 40px;
+				margin-top: 260px;
+				display: none;
+			}
+
+			#btn-group span {
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				line-height: 35px;
+				font-size: 40px;
+				text-align: center;
+				font-weight: bold;
+				vertical-align: middle;
+				background-color: rgba(255, 255, 255, 0.6);
+				color: #666;
+			}
+
+			#btn-group span:hover {
+				background-color: rgba(255, 255, 255, 0.8);
+				color: #333;
+				cursor: pointer;
+			}
+
+			#btn-group #right {
+				right: 0;
+				left: initial;
+			}
+
+			ol {
+				position: absolute;
+				bottom: 10px;
+				right: 0;
+			}
+
+			ol li {
+				width: 12px;
+				height: 12px;
+				float: left;
+				background-color: #fff;
+				border-radius: 6px;
+				margin: 0 8px;
+			}
+
+			ol li:hover {
+				cursor: pointer;
+			}
+
+			ol li.current {
+				background-color: #FF8400;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<ul id="ul">
+				<li><img src="img/1.jpg" /></li>
+				<li><img src="img/2.jpg" /></li>
+				<li><img src="img/3.jpg" /></li>
+				<li><img src="img/4.jpg" /></li>
+			</ul>
+			<div id="btn-group">
+				<span id="left">
+					＜</span> <span id="right">＞
+				</span>
+			</div>
+			<ol id="pageCon"></ol>
+		</div>
+
+		<script type="text/javascript">
+			// 属性有 
+			// 父容器
+			// imgli 的ul
+			// img数组//可以自己去循环
+			// 圆点数组 根据图片数组得来长度
+			// 左右按钮
+			// 单个img宽度
+			// 循环时间
+			// 
+			// 方法有 
+			// 横向移动到任意位置
+			// 向右播放
+			// 向左播放 
+			// 自动播放 循环向右
+
+			function Slider(container, imgWidth, ul, pageCon, btnGroup, time, autoPlay) {
+				this.container = container || null; //Slider容器
+				this.imgWidth = imgWidth; //图片宽度
+				this.ul = ul || null; //图片li的父容器
+				this.pageCon = pageCon || null; //分页按钮容器
+				this.btnGroup = btnGroup || null; //左右按钮容器
+				this.time = time; //左右按钮容器
+				this.autoPlay = autoPlay; //是否自动播放  不可以用||true  或语句只要true就是true;
+				this.index = 0;
+				this.timeId;
+				this.startPlay();
+			}
+
+			//开始播放
+			Slider.prototype.startPlay = function() {
+				var that = this;
+				this.init();
+				this.pagination();
+				var rightBtn = this.btnGroup.children[1];
+				var LeftBtn = this.btnGroup.children[0];
+				rightBtn.onclick = function() {
+					that.goRight();
+				};
+				LeftBtn.onclick = function() {
+					that.goLeft();
+				};
+				if (this.autoPlay == true) {
+					this.loop();
+				}
+			}
+
+			//初始化创建圆点 
+			Slider.prototype.init = function() {
+				var that = this;
+				var imgLi = this.ul.getElementsByTagName("li");
+				if (this.pageCon) {
+					for (var i = 0; i < imgLi.length; i++) {
+						var pageLi = document.createElement("li");
+						pageLi.setAttribute("index", i);
+						this.pageCon.appendChild(pageLi);
+					};
+					pageArr = this.pageCon.children;
+					pageArr[0].className = "current";
+				}
+				var imgLiLast = imgLi[0].cloneNode(true);
+				ul.appendChild(imgLiLast);
+			};
+
+			//动画方法
+			Slider.prototype.animate = function(element, target) {
+				clearInterval(element.timeId);
+				element.timeId = setInterval(function() {
+					var current = element.offsetLeft;
+					var step = 10;
+					step = (target - current) > 0 ? step : -step;
+					current += step;
+					if (Math.abs(target - current) > Math.abs(step)) {
+						element.style.left = current + "px";
+					} else {
+						element.style.left = target + "px";
+						clearInterval(element.timeId);
+					}
+				}, 10);
+			};
+
+			//分页按钮点击事件 current状态
+			Slider.prototype.pagination = function() {
+				var that = this;
+				if (this.pageCon) {
+					pageArr = this.pageCon.children;
+					for (var i = 0; i < pageArr.length; i++) {
+						pageArr[i].onclick = function() {
+							this.index = this.getAttribute("index");
+							for (var j = 0; j < pageArr.length; j++) {
+								pageArr[j].className = "";
+							}
+							this.className = "current";
+							that.animate(that.ul, -that.imgWidth * this.index);
+						}
+					};
+				}
+			}
+
+			//向右播放图片
+			Slider.prototype.goRight = function() {
+				var pageArr = this.pageCon.children;
+				if (this.index > pageArr.length - 1) {
+					this.index = 0;
+					this.ul.style.left = 0 + "px";
+				}
+				this.index++;
+				this.animate(this.ul, -this.imgWidth * this.index);
+				if (this.index == pageArr.length) {
+					pageArr[this.index - 1].className = "";
+					pageArr[0].className = "current";
+				} else {
+					for (var i = 0; i < pageArr.length; i++) {
+						pageArr[i].className = "";
+					}
+					pageArr[this.index].className = "current";
+				}
+			}
+
+			//向左播放图片
+			Slider.prototype.goLeft = function() {
+				var that = this;
+				var pageArr = this.pageCon.children;
+				if (this.index == 0) {
+					this.index = pageArr.length;
+					this.ul.style.left = -this.imgWidth * this.index + "px";
+				}
+				this.index--;
+				that.animate(this.ul, -this.imgWidth * this.index);
+				for (var i = 0; i < pageArr.length; i++) {
+					pageArr[i].className = "";
+				}
+				pageArr[this.index].className = "current";
+			}
+			//自动循环播放
+			Slider.prototype.loop = function() {
+				var that = this;
+				clearInterval(this.timeId);
+				this.timeId = setInterval(function() {
+					that.goRight();
+				}, this.time);
+				this.container.onmouseover = function() {
+					clearInterval(that.timeId);
+				};
+				this.container.onmouseleave = function() {
+					var tt = that;
+					that.timeId = setInterval(function() {
+						tt.goRight();
+					}, that.time);
+				}
+			}
+
+			var con = document.getElementById("box");
+			var pageCon = document.getElementById("pageCon");
+			var btnGroup = document.getElementById("btn-group");
+			var ulobj = document.getElementById("ul");
+
+			var slider = new Slider(con, 400, ulobj, pageCon, btnGroup, 3000, true);
+		</script>
+
+	</body>
+</html>

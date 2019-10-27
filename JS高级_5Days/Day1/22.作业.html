@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script>
+
+        /*
+        *
+        * 下面的都是一遍
+        * 三种创建对象方式
+        * 工厂模式创建对象
+        * 案例10---理解
+        * 案例14
+        * 案例15
+        * 案例16
+        * 案例18
+        *
+        *  就写两遍
+        * 案例21
+        *
+        *
+        * */
+
+    </script>
+
+    <script>
+        console.log("------三种创建对象的方式(字面量，系统构造函数，自定义构造函数)----");
+        //三种创建对象的方式
+        //1.字面量
+        var per1 = {
+            name: "小红",
+            age: 29,
+            sayHi: function () {
+                console.log("你好啊");
+            }
+        };
+
+        //2.使用系统构造函数创建对象
+        var per2 = new Object();
+        per2.name = "das";
+        per2.age = 12;
+        per2.sex = "男";
+        per2.eat = function () {
+            console.log("tuan");
+        };
+        per2.readBook = function () {
+            console.log("禁书目录");
+        };
+
+        console.log(typeof per2); //object
+
+        //3.自定义构造函数创建对象
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+            this.sayHi = function () {
+                console.log("你好啊");
+            };
+        }
+
+        var per3 = new Person("小明", 29);
+        per3.sayHi();
+    </script>
+
+    <script>
+        console.log("-----------------工厂模式创建对象-----------------");
+
+        //工厂模式创建对象
+        function createAnimal(name, age) {
+            var animal = new Object();
+            animal.name = name;
+            animal.age = age;
+            animal.sayHi = function () {
+                console.log("汪汪汪");
+            };
+            return animal;
+        }
+
+        var dog = createAnimal("小黄", 30);
+        dog.sayHi();
+        /*
+         * 共同点:都是函数,都可以创建对象,都可以传入参数
+         *
+         * 工厂模式:
+         * 函数名是小写
+         * 有new,
+         * 有返回值
+         * new之后的对象是当前的对象
+         * 直接调用函数就可以创建对象
+         *
+         * 自定义构造函数:
+         * 函数名是大写(首字母)
+         * 没有new
+         * 没有返回值
+         * this是当前的对象
+         * 通过new的方式来创建对象
+         *
+         *
+         * */
+    </script>
+
+    <script>
+        //案例14：利用原型共享数据
+        function Student(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+
+        //原型对象
+        Student.prototype.height = "120cm";
+        Student.prototype.weight = "60kg";
+        Student.prototype.study = function () {
+            console.log("学习");
+        };
+        Student.prototype.eat = function () {
+            console.log("吃面");
+        };
+
+        //实例化对象并初始化
+        var stu = new Student("sam", 23, "女");
+        console.dir(Student);
+        console.dir(stu);
+
+        //原型对象的属性和方法可以跟实例对象共享
+    </script>
+
+    <script>
+        //原型的简单写法
+
+        function Teacher(name,age,sex){
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+        }
+        Teacher.prototype = {
+            //需要手动修改构造器指向
+            constructor:Teacher,
+            height:"199",
+            weight:"30kg",
+            teach:function(){
+              console.log("fa Q");
+            },
+            eat:function(){
+                console.log("食屎啦你");
+            }
+        }
+
+        var tea = new Teacher("小明你",20,"女");
+        tea.eat();
+    </script>
+
+    <script>
+        function Fish(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        Fish.prototype.eat = function(){
+            console.log("asdas");
+        };
+        Fish.prototype.play = function(){
+            console.log("asddsadasdasdas");
+            this.eat();
+        };
+        Fish.prototype.sleep = function(){
+            console.log("asdasadassssssssssssssss");
+            this.play();
+        };
+
+        var fish = new Fish("罗非鱼",9);
+        fish.sleep();
+    </script>
+
+    <script>
+        String.prototype.myReverse = function(){
+            var myStr = "";
+            for(var i = this.length-1;i>=0;i--){
+                myStr+=this[i];
+            }
+            console.log(myStr);
+        };
+
+        var str = "adsasd";
+        str.myReverse();
+
+
+        //为Array内置对象的原型对象中添加方法
+        Array.prototype.mySort = function(){
+            for(var i=0;i<this.length-1;i++){
+                for(var j=0;j<this.length-1-i;j++){
+                    if(this[j]<this[j+1]){
+                        var temp=this[j];
+                        this[j]=this[j+1];
+                        this[j+1]=temp;
+                    }//end if
+                }// end for
+            }//end for
+        };
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>
