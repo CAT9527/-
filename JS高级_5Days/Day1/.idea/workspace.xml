@@ -5,49 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41e7aebb-ad8a-4b1c-9fd4-6ec679ba5815" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.课程介绍.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.复习.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03.创建对象的三种方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.自定义构造函数创建对象做的事情.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05.工厂模式创建对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.构造函数和实例对象之间的关系.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.构造函数对象带来的问题.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08.原型添加方法解决数据共享和节省内存空间.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.原型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.体会面向过程与面向对象编程思想.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11.复习原型.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.构造函数和实例对象和原型对象之间的关系（重点）.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.总结三者之间的关系.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14.利用原型共享数据.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15.原型的简单语法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16.原型的方法是可以相互访问的.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17.实例对象使用的属性和方法的层层的搜索.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18.为内置对象添加原型方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19.把局部变量变成全局变量.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.把随机数对象暴露给window称为全局变量.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21.案例随机小方块.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22.作业.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业1：轮播图/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业1：轮播图/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业1：轮播图/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业1：轮播图/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业1：轮播图/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业1：轮播图/轮播图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/demo_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/font/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/作业2：随机点餐系统/随机点餐系统.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebApi_7Days/Day7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebApi_7Days/Day7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,54 +16,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/22.作业.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1800">
-                    <caret line="198" column="10" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
-                    <folding>
-                      <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
-                      <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
-                      <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
-                      <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
-                      <element signature="n#script#5;n#head#0;n#html#0;n#!!top" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-524182251">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="33" />
+          <entry key="html" value="35" />
           <entry key="js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="33" />
+          <entry key="HTML" value="35" />
           <entry key="JavaScript" value="1" />
         </counts>
       </usages-collector>
@@ -123,11 +56,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/21.案例随机小方块.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="75" column="35" lean-forward="true" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+              <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/22.作业.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
+              <folding>
+                <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#3;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
+                <element signature="n#script#5;n#head#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -135,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/14.利用原型共享数据.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
+            <state relative-caret-position="1140">
               <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="25" />
             </state>
           </provider>
@@ -144,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15.原型的简单语法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="840">
               <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="23" />
             </state>
           </provider>
@@ -153,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/16.原型的方法是可以相互访问的.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="1230">
               <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
@@ -162,7 +111,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/18.为内置对象添加原型方法.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="1080">
               <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
             </state>
           </provider>
@@ -171,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/10.体会面向过程与面向对象编程思想.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-330">
+            <state relative-caret-position="390">
               <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
               <folding>
                 <element signature="e#474#489#0" />
@@ -192,7 +141,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/03.创建对象的三种方式.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
+            <state relative-caret-position="1920">
               <caret line="64" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
@@ -201,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/05.工厂模式创建对象.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="810">
               <caret line="27" selection-start-line="27" selection-end-line="45" selection-end-column="12" />
             </state>
           </provider>
@@ -263,7 +212,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -275,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,6 +235,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -331,19 +280,20 @@
       <workItem from="1572001435686" duration="1326000" />
       <workItem from="1572075064843" duration="1843000" />
       <workItem from="1572159492653" duration="12171000" />
+      <workItem from="1572226695778" duration="577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23013000" />
+    <option name="totallyTimeSpent" value="23590000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" x="75" y="51" width="442" height="912" id="Project" order="0" type="FLOATING" weight="0.15138409" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="1" side_tool="true" />
+      <window_info content_ui="combo" x="965" y="84" width="442" height="912" id="Project" order="2" type="FLOATING" weight="0.15138409" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -373,7 +323,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/03.创建对象的三种方式.html</url>
           <line>18</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -474,17 +423,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05.工厂模式创建对象.html">
+    <entry file="file://$PROJECT_DIR$/21.案例随机小方块.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="27" selection-start-line="27" selection-end-line="45" selection-end-column="12" />
+        <state relative-caret-position="420">
+          <caret line="75" column="35" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/03.创建对象的三种方式.html">
+    <entry file="file://$PROJECT_DIR$/14.利用原型共享数据.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="1140">
+          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15.原型的简单语法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16.原型的方法是可以相互访问的.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/18.为内置对象添加原型方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10.体会面向过程与面向对象编程思想.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="e#474#489#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -495,41 +475,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10.体会面向过程与面向对象编程思想.html">
+    <entry file="file://$PROJECT_DIR$/03.创建对象的三种方式.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding>
-            <element signature="e#474#489#0" />
-          </folding>
+        <state relative-caret-position="1920">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/14.利用原型共享数据.html">
+    <entry file="file://$PROJECT_DIR$/05.工厂模式创建对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/15.原型的简单语法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/16.原型的方法是可以相互访问的.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="810">
+          <caret line="27" selection-start-line="27" selection-end-line="45" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/22.作业.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="198" column="10" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
+        <state relative-caret-position="227">
+          <caret line="184" column="24" lean-forward="true" selection-start-line="184" selection-start-column="24" selection-end-line="184" selection-end-column="24" />
           <folding>
             <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#2;n#head#0;n#html#0;n#!!top" />
@@ -537,20 +500,6 @@
             <element signature="n#script#4;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#5;n#head#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18.为内置对象添加原型方法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="36" column="27" lean-forward="true" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/21.案例随机小方块.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="75" column="35" lean-forward="true" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
         </state>
       </provider>
     </entry>
