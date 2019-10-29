@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原型与原型链</title>
+    <script>
+        //使用对象----使用对象中的属性和对象中的方法，使用构造函数
+        //构造函数
+        function Person(name,age){
+            this.name = name;
+            this.age = age;
+            this.eat = function(){
+                console.log("吃东西");
+            };
+        }
+
+        //如果想要使用一些属性和方法，并且属性的值在每个对象中都是一样的，方法在每个对象中操作也是一样，那么为了洁身内存空间，共享数据，是可以把属性和方法通过原型的方式赋值
+
+        //添加共享的属性和方法
+        Person.prototype.sex ="男";
+        Person.prototype.sayHi = function(){
+            console.log("你好啊");
+        };
+        //实例化对象，并初始化
+        var per = new Person("小明",20);
+
+        //实例对象的原型__proto__和构造函数的原型prototype指向是相同的
+        console.log(per.__proto__==Person.prototype);
+        //实例对象的原型__proto__是浏览器使用的
+        //构造函数的原型prototype是程序员使用的
+
+        //实例对象（per）与原型对象(per.__proto__)之间的关系通过原型(__proto__)进行联系的，而这个关系就是原型链
+
+        //所以：
+        //原型链：是一种关系，实例对象和原型对象之间的关系，这个关系是通过原型进行联系的
+    </script>
+</head>
+<body>
+
+</body>
+</html>

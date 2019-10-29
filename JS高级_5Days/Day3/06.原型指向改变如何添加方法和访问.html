@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //人的构造函数
+        function Person(age){
+            this.age = age;
+        }
+        //人的原型中添加方法
+        Person.prototype.eat = function(){
+            console.log("人正在吃东西");
+        };
+
+        //学生构造函数
+        function Student(sex){
+            this.sex = sex;
+        }
+        //方法放在改变前
+        //学生的原型中添加方法-----先在原型中添加方法
+        // Student.prototype.sayHi = function(){
+        //     console.log("你好");
+        // };
+
+
+        //改变了原型对象的指向
+        Student.prototype = new Person(10);
+
+        //方法放在改变后
+        //学生的原型中添加方法-----先在原型中添加方法
+        //此时sayHi方法放在了new Person(10)的实例对象中
+        Student.prototype.sayHi = function(){
+            console.log("你好");
+        };
+
+        var stu = new Student("男");
+        stu.eat();
+        stu.sayHi();
+        console.dir(stu);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

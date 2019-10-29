@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逆推继承看原型</title>
+    <script>
+        function F1(age,str){
+            this.age = age;
+            this.str = "这里是"+str+"的实例对象";
+        }
+        function F2(age,str){
+            this.age = age;
+            this.str = "这里是"+str+"的实例对象";
+        }
+        F2.prototype = new F1(10,"F1");
+
+        function F3(age,str){
+            this.age = age;
+            this.str = "这里是"+str+"的实例对象";
+        }
+        F3.prototype = new F2(20,"F2");
+
+        var f3 = new F3(30,"F3");
+        console.log(f3.age);
+        console.dir(f3);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
