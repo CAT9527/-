@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script>
+
+
+    //普通的函数
+    function f1() {
+      var num = 10;
+      num++;
+      return num;
+    }
+    console.log(f1());//11
+    console.log(f1());//11
+    console.log(f1());//11
+
+    //函数模式的闭包
+    function f2() {
+      var num = 10;//这个num就第一次的时候有使用
+      return function () {
+        num++;
+        return num;//之后的几次都是使用缓存的这个num值
+      }
+    }
+    var ff = f2();
+    console.log(ff());//11
+    console.log(ff());//12
+    console.log(ff());//13
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>

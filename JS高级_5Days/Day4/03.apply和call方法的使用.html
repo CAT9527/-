@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+
+        //apply和call的使用
+        //作用：可以改变this的指向
+        // function f1(x, y) {
+        //     console.log("结果是：" + (x + y) + this);
+        // }
+        //
+        // f1(10, 20);//函数的调用
+        //
+        // console.log("-----------");
+        // //此时f1实际上是当成对象来使用的
+        // //apply和call方法也是函数的调用
+        // f1.apply();
+        // f1.call();
+        // console.log("-----------");
+        // f1.apply(null);
+        // f1.call(null);
+        //
+        // //apply和call方法中如果没有传入参数或者传入null，那么调用该方法的函数对象中的this就是默认的window
+        // f1.apply(null, [100, 200]);
+        // f1.call(null, 100, 200);
+        //
+        // //apply和call都可以让函数或者方法来调用，传入参数和函数自己的调用的写法不一样，但是效果是一样的
+        //
+        // var result1 = f1.apply(null, [10, 20]);
+        // var result2 = f1.call(null, [10, 20]);
+
+
+        // function f1(x,y) {
+        //     console.log("这个函数是window对象的一个方法" + this);
+        // }
+        // f1(10,20);
+        //
+        // var obj = {
+        //     age:10,
+        //     sex:"男"
+        // };
+        // f1.apply(obj,[10,20]);
+        // f1.call(obj,10,20);
+        // console.dir(obj);
+
+        //apply可以改变this的指向
+
+        function Person(age,sex){
+
+            this.age = age;
+            this.sex = sex;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

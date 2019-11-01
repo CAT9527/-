@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点赞案例</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            margin-left: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: 180px;
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="images/ly.jpg" alt=""><br/><input type="button" value="点赞(1)"></li>
+    <li><img src="images/lyml.jpg" alt=""><br/><input type="button" value="点赞(1)"></li>
+    <li><img src="images/fj.jpg" alt=""><br/><input type="button" value="点赞(1)"></li>
+    <li><img src="images/bd.jpg" alt=""><br/><input type="button" value="点赞(1)"></li>
+</ul>
+
+<script>
+    function my$(tagName) {
+        return document.getElementsByTagName(tagName);
+    }
+
+    //闭包
+    function getValue() {
+        var value = 2;
+        return function () {
+            this.value = "点赞(" + (value++) + ")";
+        };
+    }
+
+    //获取按钮
+    var btnObj = my$("input");
+    for (var i = 0; i < btnObj.length; i++) {
+        //注册事件
+        btnObj[i].onclick = getValue();
+    }
+</script>
+</body>
+</html>

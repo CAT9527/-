@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高阶函数之函数作为参数使用</title>
+    <script>
+
+        //一、
+        // function f1(fn){
+        //     console.log("f1的函数");
+        //     fn();
+        // }
+        //
+        // //fn是参数，最后作为函数使用了，函数是可以作为参数使用的
+        //
+        // //1.匿名参数
+        // f1(function(){
+        //     console.log("我是匿名函数");
+        // });
+        //
+        // //2.命名函数
+        // function f2() {
+        //     console.log("我是命名函数");
+        // }
+        // f1(f2);//不能有括号
+        // //函数作为参数的时候，如果师命名函数，那么只传入命名函数的名字就行了
+
+
+        //二、定时器传入函数
+        function f1(fn) {
+            setInterval(function(){
+                console.log("1.");
+                fn();
+                console.log("2.");
+            },1000);
+        }
+
+        function f2(){
+            console.log("1.5.");
+        }
+        f1(f2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
