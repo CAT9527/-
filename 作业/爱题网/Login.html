@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆界面</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background: url("images/bg.png") no-repeat center bottom;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #title {
+            height: 32px;
+            font-size: 32px;
+            font-family: "苹方-简 中黑体", serif;
+            font-weight: 500;
+            position: absolute;
+            left: -258px;
+            top: -87px;
+            color: #fff;
+            line-height: 32px;
+        }
+
+        .login {
+            width: 518px;
+            height: 598px;
+            background-color: #fff;
+            margin: 212px auto;
+            border-radius: 8px;
+            border: 1px solid rgba(151, 151, 151, 1);
+            position: relative;
+        }
+
+        .login_bd {
+            text-align: center;
+        }
+
+        .login_bd h1 {
+            height: 18px;
+            font-size: 18px;
+            font-family: "苹方-简 中黑体";
+            font-weight: 700;
+            color: rgb(112, 128, 238);
+            line-height: 18px;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .login-hd,
+        .login_foot {
+            padding-left: 78px;
+            padding-right: 80px;
+        }
+
+        .login-hd h1 {
+            height: 14px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(51, 51, 51, 1);
+            line-height: 14px;
+            padding: 20px 0 15px;
+        }
+
+        .login-hd input {
+            width: 356px;
+            height: 44px;
+        }
+
+        .login-hd a {
+            height: 14px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(153, 153, 153, 1);
+            line-height: 14px;
+            display: inline-block;
+            margin-left: 304px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        #loginBtn {
+            background: rgba(88, 106, 234, 1);
+            box-shadow: 0px 3px 6px 0px rgba(88, 106, 234, 0.1);
+            border-radius: 2px;
+            font-size: 16px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 1);
+            line-height: 22px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(153, 153, 153, 1);
+            line-height: 14px;
+            display: inline-block;
+            margin: 24px 124px 21px;
+        }
+
+        .login-hd p > a {
+            margin: 0;
+            color: #7b89ef;
+            text-decoration: underline;
+        }
+
+        .login_foot div {
+            display: inline-block;
+            margin-left: 65px;
+            margin-right: 45px;
+        }
+
+        .login_foot img {
+            display: block;
+            text-align: center;
+            margin: 0 15px 10px 10px;
+        }
+
+        .login_foot a {
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: rgba(142, 149, 172, 1);
+            line-height: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login">
+    <h2 id="title">爱题网</h2>
+    <div class="login_bd"><h1>登陆</h1></div>
+    <div class="login-hd">
+        <h1>账号：</h1>
+        <input type="text" value="请输入账号">
+        <h1>密码：</h1>
+        <input type="password" value="请输入密码">
+        <h1>验证码：</h1>
+        <input type="text" value="请输入验证码">
+        <a href="#">忘记密码</a>
+        <input type="button" value="登陆" id="loginBtn" onclick="window.location.href ='Home.html' ">
+        <p>没有账户，<a href="#">去注册</a></p>
+    </div>
+    <div class="login_foot">
+        <div class="qq">
+            <a href="#"><img src="images/qq.png" alt="">
+                QQ登陆</a>
+        </div>
+        <div class="wechat">
+            <a href="#"><img src="images/微信.png" alt="">
+                微信登陆</a>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+/*公共样式表*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    background-color: #fff;
+}
+.blue{
+    color: rgba(88, 106, 234, 1)!important;
+}
+input {
+    cursor: pointer;
+    outline: none;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*导航栏部分*/
+.aiti-nav {
+    height: 70px;
+    background-color: #fff;
+}
+
+.aiti-nav .fl {
+    width: 400px;
+    height: 70px;
+    float: left;
+}
+
+.fl .fl-l {
+    display: inline-block;
+    width: 96px;
+    height: 45px;
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(88, 106, 234, 1);
+    line-height: 45px;
+    margin-top: 14px;
+    margin-bottom: 11px;
+}
+
+.fl .fl-r {
+    float: right;
+}
+
+.fl .fl-r a {
+    width: 32px;
+    height: 46px;
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #505050;
+    line-height: 22px;
+    display: inline-block;
+    margin: 23px 35px 0;
+}
+
+._choose {
+    color: rgba(88, 106, 234, 1) !important;
+    border-bottom: 1px solid rgba(88, 106, 234, 1);
+}
+
+.fr {
+    width: 493px;
+    height: 70px;
+    float: right;
+    position: relative;
+}
+
+.fr .fr-l {
+    width: 300px;
+    height: 36px;
+    margin: 17px 0;
+    border-radius: 1px;
+    background-color: white;
+    border: 1px solid rgba(204, 204, 204, 1);
+    display: inline-block;
+    position: relative;
+}
+
+.fr-l .p1 {
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 17px;
+    position: absolute;
+    left: 6px;
+    top: 10px;
+}
+
+.fr-l .p2 {
+    width: 0;
+    height: 0;
+    border: 5px solid;
+    border-color: #999 transparent transparent transparent;
+    position: absolute;
+    left: 39px;
+    top: 15px;
+}
+.fr-l .p1:hover>.xiala-l {
+    display: block;
+}
+
+.fr .xiala-l {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    z-index: 9999;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.fr .xiala-l .jiantou {
+    width: 0;
+    height: 0;
+    border-width: 0 6px 10px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    position: absolute;
+    left: 28px;
+    top: -10px;
+}
+.fr-xiala{
+    width: 60px;
+    height: 40px;
+    float: left;
+    position: relative;
+}
+.fr-xiala .xiala-l{
+ display: none;
+}
+.fr-xiala .xiala-l li {
+    width: 68px;
+    height: 25px;
+    text-align: center;
+}
+
+.fr-xiala .xiala-l li a {
+    font-size: 14px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(88, 106, 234, 1);
+    line-height: 20px;
+}
+.fr-xiala:hover>.xiala-l{
+    display: block;
+}
+.shuxian {
+    width: 1px;
+    height: 20px;
+    background: rgba(204, 204, 204, 1);
+    position: absolute;
+    left: 54px;
+    top: 8px;
+}
+
+.fr-l input {
+    width: 212px;
+    height: 17px;
+    background-color: white;
+    border: 0px;
+    position: absolute;
+    top: 10px;
+    left: 56px;
+}
+
+.fr-l img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 7px;
+    right: 11px;
+}
+
+.fr-r {
+    float: right;
+    margin-top: 24px;
+    margin-bottom: 22px;
+}
+
+.fr-r input {
+    margin-left: 10px;
+}
+
+.fr-r #registerBtn {
+    width: 56px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(88, 106, 234, 1);
+    background-color: white;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(88, 106, 234, 1);
+    line-height: 17px;
+}
+
+.fr-r #registerBtn:hover {
+    color: white;
+    background-color: rgba(88, 106, 234, 1);
+}
+
+.fr-r #loginBtn {
+    background-color: white;
+    font-size: 12px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #000;
+    line-height: 17px;
+    border: 0;
+}
+
+.fr-r #loginBtn:hover {
+    color: rgba(88, 106, 234, 1);
+}
+
+/*footer部分*/
+.footer {
+    height: 298px;
+    background-color: #3a3a3a;
+}
+
+.footer-hd {
+    position: relative;
+}
+
+.footer-hd h1 {
+    font-size: 32px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(88, 106, 234, 1);
+    line-height: 45px;
+    position: absolute;
+    top: 76px;
+    left: 181px;
+}
+
+.footer-hd img {
+    position: absolute;
+    top: 34px;
+    right: 198px;
+}
+
+.footer-hd .p1 {
+    width: 98px;
+    height: 40px;
+    font-size: 14px;
+    font-family: STHeitiSC-Medium, STHeitiSC;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px;
+    position: absolute;
+    top: 155px;
+    right: 203px;
+}
+
+.footer-hd ul {
+    position: absolute;
+    top: 190px;
+    left: 181px;
+}
+
+.footer-hd li {
+    float: left;
+    font-size: 14px;
+    font-family: STHeitiSC-Medium, STHeitiSC;
+    font-weight: 500;
+    background-color: #3a3a3a;
+    line-height: 14px;
+    margin-right: 20px;
+}
+
+.footer-hd li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-hd .p2 {
+    font-size: 14px;
+    font-family: STHeitiSC-Medium, STHeitiSC;
+    font-weight: 500;
+    color: rgba(153, 153, 153, 1);
+    line-height: 14px;
+    position: absolute;
+    left: 466px;
+    top: 264px;
+}
+
+

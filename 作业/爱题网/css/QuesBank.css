@@ -1,0 +1,99 @@
+body{
+    background-color: #f8f8f8;
+}
+.tiku-hd{
+    height: 346px;
+    background-color: white;
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+}
+.tiku-hd .p1{
+    font-size:18px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:25px;
+    margin-bottom: 10px;
+}
+.tiku-hd .p1 ._choose{
+    display: inline-block;
+    width:51px;
+    height:20px;
+    background:rgba(236,251,227,1);
+    border-radius:2px;
+    border:1px solid rgba(116,202,67,1);
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(116,202,67,1);
+    text-align: center;
+    line-height:21px;
+}
+.tiku-hd li{
+    font-size:16px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color: #000;
+    line-height:22px;
+    margin-top: 20px;
+}
+.blue{
+    color:rgba(88,106,234,1)!important;
+}
+.tiku-hd .jiexi{
+    margin-top: 30px;
+    margin-bottom: 17px;
+}
+.tiku-hd .jiexi .p2{
+    font-size:16px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(88,106,234,1);
+    line-height:22px;
+    float: left;
+}
+.tiku-hd .jiexi .p3{
+    width:1062px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:20px;
+    float: left;
+    margin-left: 15px;
+}
+.tiku-hd .img1{
+    position: absolute;
+    top: 331px;
+    left: 22px;
+    width:20px;
+    height:14px;
+}
+.tiku-hd .p4{
+    position: absolute;
+    top: 329px;
+    left: 52px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+}
+.tiku-hd .img2{
+    position: absolute;
+    top: 326px;
+    left: 145px;
+    width:21px;
+    height:20px;
+}
+.tiku-hd .p5{
+    position: absolute;
+    top: 329px;
+    left: 169px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+}

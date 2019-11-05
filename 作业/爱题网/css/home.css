@@ -1,0 +1,340 @@
+.banner {
+    height: 560px;
+    background-color: #4674ee;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.banner-hd {
+    position: relative;
+}
+
+#ali {
+    width: 511px;
+    height: 94px;
+    color: #675AE0;
+    background: rgba(255, 255, 255, 1);
+    line-height: 80px;
+    text-align: center;
+    transform: skewX(-12deg);
+    position: absolute;
+    top: 245px;
+    right: 64px;
+}
+
+#ali h1 {
+    font-size: 28px;
+    font-style: normal;
+    letter-spacing: 8px;
+}
+
+#ban_btn {
+    width: 327px;
+    height: 86px;
+    background: rgba(249, 235, 4, 1);
+    border-radius: 43px;
+    font-size: 28px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(70, 116, 238, 1);
+    line-height: 40px;
+    position: absolute;
+    left: 415px;
+    top: 403px;
+}
+
+.search {
+    height: 318px;
+    background-color: #ffffff;
+    margin-bottom: 21px;
+}
+
+.search-bd-1 {
+    height: 42px;
+    padding-top: 10px;
+}
+
+.search-bd-1, .search-bd-2, .search-bd-3 {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.search-bd-1 li {
+    display: inline-block;
+    float: left;
+    padding-right: 30px;
+    line-height: 30px;
+}
+
+.search-bd-1 li .blue {
+    color: #4674ee;
+}
+
+.search-bd-1 li a {
+    font-size: 16px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(153, 153, 153, 1);
+}
+
+.search-bd-1 li a:hover {
+    color: #4674ee;
+}
+
+.search-bd-2,
+.search-bd-3 {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search-bd-2 li,
+.search-bd-3 li {
+    height: 28px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin: 10px;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+}
+
+.search-bd-2 li a, .search-bd-3 li a, .search-bd-4 li a {
+    font-size: 16px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #999;
+    line-height: 22px;
+    margin: 3px 15px;
+}
+
+.search-bd-2 li:hover > a, .search-bd-3 li:hover > a {
+    color: #fff;
+}
+
+.search-bd-2 li:hover, .search-bd-3 li:hover {
+    background-color: #586aea;
+}
+
+.blue_1 {
+    background-color: #586aea !important;
+}
+
+.blue_1 > a {
+    color: #fff !important;
+}
+
+.search-bd-4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.search-bd-4 .changgui {
+    font-size: 18px;
+    font-family: STHeitiSC-Medium, STHeitiSC;
+    font-weight: 500;
+    color: rgba(51, 51, 51, 1);
+    line-height: 28px;
+    border: 0px;
+}
+
+.search-bd-4 li {
+    height: 28px;
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    margin: 10px;
+    display: inline-block;
+    float: left;
+    border-radius: 20px;
+}
+
+.interview{
+    height: 592px;
+    margin-bottom: 32px;
+    background-color: white;
+}
+.title{
+    display: inline-block;
+    margin: 44px 407px 4px 397px;
+    position: relative;
+}
+.title p {
+    font-size:24px;
+    font-family:PingFangSC-Medium,PingFang SC;
+    font-weight:500;
+    color:rgba(88,106,234,1);
+    line-height:33px;
+    position: absolute;
+    left: 152px;
+    top: -4px;
+}
+.interview li {
+    width: 394px;
+    height: 142px;
+    padding: 40px 0 20px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    float: left;
+    position: relative;
+    border: 1px solid #fff;
+}
+.interview li:hover{
+    box-shadow:0px 2px 4px 2px rgba(0,0,0,0.1);
+    border-radius:2px;
+}
+.interview li:hover>input{
+    display: block;
+}
+.interview li .img1{
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+.interview li .p1{
+    position: absolute;
+    left: 124px;
+    top: 40px;
+    font-size:18px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(88,106,234,1);
+    line-height:25px;
+}
+.interview li .img2{
+    position: absolute;
+    left: 130px;
+    top: 100px;
+}
+.interview li .p2{
+    position: absolute;
+    left: 160px;
+    top: 100px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+}
+.interview li .img3{
+    position: absolute;
+    left: 247px;
+    top: 100px;
+}
+.interview li .p3{
+    position: absolute;
+    left: 277px;
+    top: 100px;
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+}
+.interview li input{
+    display: none;
+    width:120px;
+    height:36px;
+    background:rgba(255,255,255,1);
+    border-radius:2px;
+    border:1px solid rgba(88,106,234,1);
+    position: absolute;
+    left: 124px;
+    top: 144px;
+    font-size:16px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(88,106,234,1);
+    line-height:22px;
+    cursor: pointer;
+}
+.interview li input:hover{
+    color: #fff;
+    background: #586aea;
+}
+
+
+.normal{
+    height: 960px;
+    background-color: #fff;
+}
+.nor-hd{
+    margin-bottom: 50px;
+}
+.normal li{
+    height: 118px;
+    position: relative;
+    border:1px solid #fff;
+}
+.normal li:hover{
+    border:1px solid rgba(88,106,234,1);
+}
+.normal li .img1{
+    position: absolute;
+    left: 10px;
+    top:21px;
+}
+.normal li a{
+    width: 1160px;
+    font-size:18px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:25px;
+    position: absolute;
+    left: 40px;
+    top:20px;
+}
+.normal li a:hover{
+    color:rgba(88,106,234,1);
+    cursor: pointer;
+}
+.normal li .p2{
+    width:51px;
+    height:20px;
+    background:rgba(205,239,255,1);
+    border-radius:2px;
+    border:1px solid rgba(63,173,223,1);
+    font-size:12px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(63,173,223,1);
+    text-align: center;
+    line-height:17px;
+    position: absolute;
+    left: 40px;
+    top:80px;
+}
+.normal li .img2{
+    position: absolute;
+    left: 111px;
+    top:85px;
+}
+.normal li .p3{
+    font-size:14px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:20px;
+    position: absolute;
+    left: 141px;
+    top:82px;
+}
+#returnTop{
+    width:60px;
+    height:60px;
+    position: absolute;
+    right: 20px;
+}
+#moreBtn{
+    width:120px;
+    height:40px;
+    background:rgba(255,255,255,1);
+    border-radius:4px;
+    border:1px solid rgba(88,106,234,1);
+    margin: 40px 548px 40px 532px;
+}
+#moreBtn:hover{
+    color: #fff;
+    background:rgba(88,106,234,1);
+}
