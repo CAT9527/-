@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页开关灯</title>
+    <style>
+        .cls {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<input type="button" value="关灯" id="btn">
+<script>
+    //DOM版本
+    document.getElementById("btn").onclick = function(){
+      var body = document.body;
+      if(body.className==""){
+          body.className = "cls";
+          this.value = "开灯";
+      }else{
+          body.className = "";
+          this.value = "关灯";
+      }
+    };
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<input type="button" value = "显示效果" id="btn">
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<script src = "jquery-1.12.1.js"></script>
+<script>
+    //DOM版本
+    // document.getElementById("btn").onclick = function(){
+    //   var pObj = document.getElementsByTagName("P");
+    //   for(var i = 1;i<pObj.length;i++){
+    //       pObj[i].innerText = "我们都是P";
+    //   }
+    // };
+
+
+    //JQuery版本
+    $("#btn").click(function(){
+        $("p").text("我们都是P");
+    });
+</script>
+</body>
+</html>
