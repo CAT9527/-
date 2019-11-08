@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+
+    //包装集:把很多的DOM的对象进行包装或者是封装---->jQuery对象
+    //jQuery对象---->DOM对象--->jQuery对象[0]--->获取到这个对象
+    //$("#btn")[0]
+    //$("#btn").get(0);
+//    $(function () {
+//      $("p")[0].innerText="哈哈";
+//    });
+
+
+    //包装集  ----->length属性
+
+    //jQuery中如何判断这个元素是否存在,就是通过包装集的length属性来测试的
+
+
+    //是通过这个对象.length属性不等于0的方式来判断
+
+//    $(function () {
+//      if($("#btn").length!=0){
+//        console.log("存在");
+//      }else{
+//        console.log("不存在");
+//      }
+//    });
+
+
+  </script>
+</head>
+<body>
+<input type="button" value="按钮" id="btn"/>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+</body>
+</html>

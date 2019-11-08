@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    ul{
+      list-style-type: none;
+    }
+    li{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      margin-right: 10px;
+      float: left;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    //隐式迭代---内部帮助我们循环遍历做操作
+
+    //每个元素做不同的操作的时候
+    //each方法,帮助我们遍历jQuery的对象
+
+    $(function () {
+      //获取所有的li,针对每个li的透明进行设置
+      $("#uu>li").each(function (index,ele) {
+        //参数1:索引,参数2:对象
+        //console.log(arguments[0]+"===="+arguments[1]);
+        //每个li的透明度不一样
+        var opacity=(index+1)/10;
+        $(ele).css("opacity",opacity);
+      });
+    });
+
+
+    //each方法就是用来遍历jQuery对象的,但是,里面的每个对象最开始都是DOM对象,如果想要使用jQuery的方法,需要把DOM对象转jQuery对象
+
+
+  </script>
+</head>
+<body>
+<ul id="uu">
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li>10</li>
+</ul>
+
+</body>
+</html>

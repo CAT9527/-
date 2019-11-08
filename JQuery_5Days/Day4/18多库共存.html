@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script>
+    //一个html文件引入了多个的js文件库,每个js库中的顶级对象可能都是$
+    //1.js  $.eat();
+    //2.js  $.sayHi();
+
+
+  </script>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+
+    //    var $=10;//普通的变量,10
+    //    console.log($);
+    //    //页面加载
+    //    $(function () {
+    //      $("#btn").click(function () {
+    //        console.log("小苏好猥琐哦");
+    //      });
+    //    });
+
+
+    // /var $=10;//普通的变量,10
+    //console.log($);
+    ////页面加载
+    //jQuery(function () {
+    //  jQuery("#btn").click(function () {
+    //    console.log("小苏好猥琐哦");
+    //  });
+    //});
+
+//    var xy = $.noConflict();//把$的权利给了xy了,$就可以作为其他的用法出现在代码中
+//    var $ = 10;//普通的变量,10
+//    console.log($);
+//    //页面加载
+//    xy(function () {
+//      xy("#btn").click(function () {
+//        console.log("小苏好猥琐哦");
+//      });
+//    });
+
+
+
+    var fdsfdsf = $.noConflict();//把$的权利给了xy了,$就可以作为其他的用法出现在代码中
+    var $ = 10;//普通的变量,10
+    console.log($);
+    //页面加载
+    fdsfdsf(function () {
+      fdsfdsf("#btn").click(function () {
+        console.log("小苏好猥琐哦");
+      });
+    });
+
+
+  </script>
+</head>
+<body>
+<input type="button" value="按钮" id="btn"/>
+
+</body>
+</html>

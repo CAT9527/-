@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    div{
+      width: 300px;
+      height: 200px;
+      background-color: green;
+    }
+    p{
+      width: 100px;
+      height: 30px;
+      background-color: red;
+      cursor: pointer;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    $(function () {
+
+      //用什么方式绑定事件,最好用对应的方式解绑事件
+      //bind括号中写什么事件的名字就会把这个事件解绑,会把这个元素的这个点击的多个事件都会解绑
+      //对象.click()这种方式添加的事件也可以使用unbind解绑
+      //括号中没有任何参数,此时该元素的所有的事件全部解绑
+      //同时解绑多个事件---每个事件的名字中间用空格即可
+
+
+      //delegate绑定事件对应的方式的解绑方式
+
+      //点击第一个按钮,div有自己的点击事件,有鼠标进入和鼠标离开事件
+      //同时为p绑定点击事件
+
+      $("#btn").click(function () {
+        //为div绑定事件
+        $("#dv").click(function () {
+          console.log("div被点了");
+        }).mouseenter(function () {
+          console.log("鼠标进来了");
+        }).mouseleave(function () {
+          console.log("鼠标离开了");
+        });
+        //在div中创建一个p,同时绑定点击事件
+        $("<p>这是一个p</p>").appendTo($("#dv"));
+        //为p绑定事件
+        $("#dv").delegate("p","click",function () {
+          console.log("啊~p被点了");
+        });
+        $("#dv").delegate("p","mouseenter",function () {
+          console.log("p的鼠标进入");
+        });
+      });
+      //第二个按钮解绑事件
+      $("#btn2").click(function () {
+        //p的点击事件没有了,移除了p的所有的事件
+        //$("#dv").undelegate();
+        //移除的是p的点击事件
+        $("#dv").undelegate("p","click");
+        //可以移除多个事件,但是每个事件之间用空格隔开
+        $("#dv").undelegate("p","click mouseenter");
+      });
+    });
+  </script>
+</head>
+<body>
+<input type="button" value="绑定事件" id="btn"/>
+<input type="button" value="解绑事件" id="btn2"/>
+<div id="dv">
+
+</div>
+
+</body>
+</html>

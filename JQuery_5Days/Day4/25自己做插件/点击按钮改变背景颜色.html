@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+
+  <script src="js/jquery-1.12.1.js"></script>
+  <script>
+
+    //如果希望jQuery的对象能够调用这个方法,那么就把这个方法加入到$.fn.这个位置
+    $(function () {
+      //点击按钮.改变每个div的背景颜色
+
+      //插件的基本的代码
+      $.fn.changeColor=function (color) {
+        //$(this)---->调用该方法的实例对象
+        $(this).css("backgroundColor",color);
+      };
+
+      $("#dv input").click(function () {
+        $("#dv2 div").css("backgroundColor",$(this).val());
+      });
+
+
+    });
+
+
+
+
+
+  </script>
+</head>
+<body>
+<div id="dv">
+  <input type="button" value="red" />
+  <input type="button" value="green" />
+  <input type="button" value="blue" />
+  <div id="dv2">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<script>
+  //点击按钮.改变每个div的背景颜色
+  $(function () {
+    //实现功能的代码
+    $("#dv input").click(function () {
+      $("#dv2 div").changeColor($(this).val());
+    });
+  });
+
+</script>
+</body>
+</html>

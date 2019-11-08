@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 400px;
+            height: 300px;
+            background-color: lawngreen;
+        }
+        p{
+            width: 100px;
+            height: 30px;
+            background-color: darkred;
+        }
+
+    </style>
+    <script src="jquery-1.12.1.js"></script>
+    <script>
+        //如果是先创建元素,再为这个子元素绑定事件(对象.事件名字(事件处理函数的方式)),后面再创建的子元素,没有事件
+
+        //点击按钮为div中添加一个子元素,并且子元素有点击的事件
+        $(function () {
+            //第一个按钮
+            $("#btn").click(function () {
+                $("<p>这是一个p</p>").appendTo($("#dv"));
+                //先创建,后绑定的事件是可以用的
+//        $("p").click(function () {
+//          alert("哈哈");
+//        });
+
+                //同上
+//        $("p").bind("click",function () {
+//          alert("哈哈");
+//        });
+
+                $("#dv").delegate("p","click",function () {
+                    alert("哈哈");
+                });
+            });
+
+            $("#btn2").click(function () {
+                //后添加的
+                $("<p>这是一个p2</p>").appendTo($("#dv"));
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value = "绑定事件" id="btn">
+<input type="button" value = "绑定事件" id="btn2">
+<div id="dv"></div>
+</body>
+</html>

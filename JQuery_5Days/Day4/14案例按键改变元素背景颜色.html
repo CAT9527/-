@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    div{
+      width: 800px;
+      height: 600px;
+      background-color: gray;
+      background-color: ;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    $(function () {
+      //用户在页面按键,可以改变div的背景颜色
+      $(document).keydown(function (e) {
+        switch (e.keyCode){
+          case 65:$("#dv").css("backgroundColor","red");break;
+          case 66:$("#dv").css("backgroundColor","green");break;
+          case 67:$("#dv").css("backgroundColor","blue");break;
+          case 68:$("#dv").css("backgroundColor","orange");break;
+          case 69:$("#dv").css("backgroundColor","yellow");break;
+          case 70:$("#dv").css("backgroundColor","deeppink");break;
+          case 71:$("#dv").css("backgroundColor","hotpink");break;
+          case 72:$("#dv").css("backgroundColor","oranged");break;
+          case 73:$("#dv").css("backgroundColor","black");break;
+          case 74:$("#dv").css("backgroundColor","white");break;
+          case 75:$("#dv").css("backgroundColor","yellowgreen");break;
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+<div id="dv"></div>
+
+</body>
+</html>

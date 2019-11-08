@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    div{
+      width: 300px;
+      height: 200px;
+      background-color: green;
+    }
+    p{
+      width: 100px;
+      height: 30px;
+      background-color: red;
+      cursor: pointer;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    $(function () {
+
+      //用什么方式绑定事件,最好用对应的方式解绑事件
+      //bind括号中写什么事件的名字就会把这个事件解绑,会把这个元素的这个点击的多个事件都会解绑
+      //对象.click()这种方式添加的事件也可以使用unbind解绑
+      //括号中没有任何参数,此时该元素的所有的事件全部解绑
+      //同时解绑多个事件---每个事件的名字中间用空格即可
+
+      //第一个按钮为div绑定事件
+      $("#btn").click(function () {
+//        //div的点击事件
+        $("#dv").bind("click",function () {
+          console.log("div被点了");
+        }).bind("click",function () {
+          console.log("div点第二个点击");
+        });
+        //鼠标进入
+        $("#dv").bind("mouseenter",function () {
+          $(this).css("backgroundColor","blue");
+        });
+        //鼠标离开
+        $("#dv").bind("mouseleave",function () {
+          $(this).css("backgroundColor","yellow");
+        });
+
+//        $("#dv").click(function () {
+//          console.log("哈哈");
+//        });
+
+
+      });
+      //第二个按钮为div解绑事件
+      $("#btn2").click(function () {
+        //解绑的是点击事件,所有的点击事件全部移除
+        //$("#dv").unbind("click");
+        //括号中没有任何参数,此时该元素的所有的事件全部解绑
+        //$("#dv").unbind();
+        //同时解绑多个事件
+        //$("#dv").unbind("mouseenter mouseleave");
+      });
+    });
+  </script>
+</head>
+<body>
+<input type="button" value="绑定事件" id="btn"/>
+<input type="button" value="解绑事件" id="btn2"/>
+<div id="dv"></div>
+
+</body>
+</html>

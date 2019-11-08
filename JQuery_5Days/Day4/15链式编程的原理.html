@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script src="jquery-1.12.1.js">
+  </script>
+  <script>
+//    $(function () {
+//      //为按钮注册点击事件
+//      $("#btn").click(function () {
+//        //$(this).val("哈哈").val("嘎嘎");
+//        //console.log( );
+//
+//        //对象.方法();调用,如果返回来的还是对象,那么可以继续的调用方法
+//      });
+//    });
+
+
+    function Person(age) {
+      this.age=age;
+      this.sayHi=function (txt) {
+        if(txt){
+          console.log("您好啊:"+txt);
+        }else{
+          console.log("您好啊");
+            return this;
+        }
+      };
+      this.eat=function () {
+        console.log("中午就吃了一个馒头和咸菜");
+        return this;
+      };
+    }
+    //对象
+     var per=new Person(10);
+    per.sayHi("嘎嘎").eat();
+    //per.sayHi().eat().sayHi().eat().eat().sayHi();
+    //console.log();
+
+
+
+    //方法();----获取这个值,如果.方法(值)--->当前的对象
+    //val();---返回的是value属性的值, val("fdds");---当前的对象
+  </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+
+</body>
+</html>
