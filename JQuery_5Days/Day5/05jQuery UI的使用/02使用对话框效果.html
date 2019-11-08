@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <script src="jquery-1.12.1.js"></script>
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <style>
+    #dialog-link {
+      padding: .4em 1em .4em 20px;
+      text-decoration: none;
+      position: relative;
+    }
+    #dialog-link span.ui-icon {
+      margin: 0 5px 0 0;
+      position: absolute;
+      left: .2em;
+      top: 50%;
+      margin-top: -8px;
+    }
+  </style>
+  <script>
+    //页面加载
+   $(function () {
+
+     $( "#dialog" ).dialog({
+       autoOpen: false,
+       width: 400,
+       buttons: [
+         {
+           text: "确定",
+           click: function() {
+             //$( this ).dialog( "close" );
+             //判断用户登录是否成功
+             if($("#userName").val()=="admin"&&$("#userPwd").val()=="xyzs"){
+               //登录成功了
+               alert("登录成功");
+               $( this ).dialog( "close" );
+             }else{
+               alert("登录失败");
+
+             }// end else
+
+           }//end clien
+         },
+         {
+           text: "取消",
+           click: function() {
+             $( this ).dialog( "close" );
+           }
+         }
+       ]
+     });
+
+// Link to open the dialog
+     $( "#dialog-link" ).click(function( event ) {
+       $( "#dialog" ).dialog( "open" );
+       event.preventDefault();
+     });
+
+
+
+
+
+   });
+  </script>
+</head>
+<body>
+<h2 class="demoHeaders">登录或者是注册</h2>
+<p>
+  <button id="dialog-link" class="ui-button ui-corner-all ui-widget">
+    <span class="ui-icon ui-icon-newwin"></span>登录
+  </button>
+</p>
+<!-- ui-dialog -->
+<div id="dialog" title="欢迎您登录...">
+  <p>
+    请输入帐号:<input type="text" value="" id="userName"/> <br/>
+    请输入密码:<input type="text" value="" id="userPwd"/><br/>
+    <input type="checkbox" value="1" />记住密码<br/>
+  </p>
+</div>
+
+
+</body>
+</html>

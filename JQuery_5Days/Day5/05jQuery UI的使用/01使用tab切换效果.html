@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script>
+
+    //1.引入 jQuery UI 的css文件
+
+    //2 引入jquery的js文件
+
+    //3 引入jQuery UI 的js文件
+
+    //4 查找和复制UI 中的某个功能的所有的代码(html,css,js)
+
+    //5 测试和使用
+  </script>
+
+  <!--引入的jquery UI 的css文件-->
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <!--引入jquery的js文件-->
+  <script src="jquery-1.12.1.js"></script>
+  <!--引入jquery UI的js文件-->
+  <script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script>
+    //一般,html代码放在body中,css代码方法style标签中,js代码在script标签的页面加载事件中
+
+    //页面加载的代码先写上
+    $(function () {
+      $( "#tabs" ).tabs();
+    });
+  </script>
+</head>
+<body>
+<div>
+  <!-- Tabs -->
+  <h2 class="demoHeaders">人物描述选项</h2>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">小苏</a></li>
+      <li><a href="#tabs-2">助教</a></li>
+      <li><a href="#tabs-3">小杨</a></li>
+      <li><a href="#tabs-4">小帅杨</a></li>
+      <li><a href="#tabs-5">杨小帅</a></li>
+    </ul>
+    <div id="tabs-1">此人极其的猥琐</div>
+    <div id="tabs-2">此人极其的龌龊</div>
+    <div id="tabs-3">此人极其的帅气嘎嘎</div>
+    <div id="tabs-4">此人极其的帅气哈哈</div>
+    <div id="tabs-5">此人极其的帅气嘿嘿</div>
+  </div>
+</div>
+
+
+</body>
+</html>
