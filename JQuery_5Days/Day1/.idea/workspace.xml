@@ -1,64 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e66c3940-95ee-4f4b-9cad-6be125afcc5a" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/huangjinghao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01.JQuery课程介绍.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02.jQuery的介绍.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03.JQuery初次体验.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04.再次体验.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05.JQuery的顶级对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06.JQuery对象和DOM对象互转.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.jQuery文件引入的问题.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08.案例----DOM版本网页开关灯.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09.案例---JQuery版本的网页开关灯.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10.案例---JQuery版本的网页开关灯第2种写法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11.网页加载的不同的方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12.案例---点击按钮显示一句话.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13.JQuery获取元素的方式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14.案例---通过id选择器获取元素点击按钮显示效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/15.案例---通过标签选择器操作元素.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16.案例---通过类选择器操作元素.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17.交集选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/18.并集选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/19.案例点击按钮设置某个元素中的标签内容.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/20.案例点击按钮设置元素的样式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/21.层次选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/22.总结选择器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/23.案例---列表隔行变色.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24案例下拉菜单/24显示和隐藏下拉菜单.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24案例下拉菜单/images/bg.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24案例下拉菜单/images/libg.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/24案例下拉菜单/jquery-1.12.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/25.案例---列表的高亮显示效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/26.案例---验证用户输入的是不是中文名字.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/QQ截图20121215110234.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/abg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/lili.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/冬裙.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/呢大衣.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/围巾.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/女包.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/女裤.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/女靴.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/棉服.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/毛衣.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/牛仔裤.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/男包.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/男棉服.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/男毛衣.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/男靴.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/登山鞋.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/皮带.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/皮衣.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/羽绒服.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/images/雪地靴.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/jquery-1.12.2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/27淘宝精品展示/淘宝精品服饰案例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jquery-1.12.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jquery-1.12.1.min.js" afterDir="false" />
-    </list>
+    <list default="true" id="e66c3940-95ee-4f4b-9cad-6be125afcc5a" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -72,7 +15,7 @@
     <session id="753645115">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.97" value="1" />
           <entry key="project.opened" value="2" />
@@ -136,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/24案例下拉菜单/24显示和隐藏下拉菜单.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-660">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -307,12 +250,12 @@
       <option name="presentableId" value="Default" />
       <updated>1572943587157</updated>
       <workItem from="1572943614965" duration="3863000" />
-      <workItem from="1573017492749" duration="10461000" />
+      <workItem from="1573017492749" duration="10739000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14324000" />
+    <option name="totallyTimeSpent" value="14602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="859" y="0" width="1102" height="1047" extended-state="0" />
@@ -560,8 +503,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/24案例下拉菜单/24显示和隐藏下拉菜单.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-660">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="60">
+          <caret line="50" column="10" lean-forward="true" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
         </state>
       </provider>
     </entry>

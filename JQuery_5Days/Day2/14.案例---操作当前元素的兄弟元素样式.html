@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 100px;
+            list-style-type: none;
+            display: inline-block;
+        }
+    </style>
+    <script src="jquery-1.12.1.js"></script>
+    <script>
+        //断链----对象调用方法之后返回的不是之前的对象，需要在锻炼的位置直接使用end()方法，内部会自动修复断链
+        //如果链式编程有问题，就用非链式编程解决
+        $(function () {
+            //鼠标进入事件，离开，点击
+            $("ul>li").mouseenter(function () {
+                $(this).css("backgroundColor", "red").siblings().css("backgroundColor", "");
+            }).mouseleave(
+                function () {
+                    $(this).parent().children().css("backgroundColor", "");
+                }
+            ).click(function () {
+                //$("this").prevAll().css("backgroundColor","skyblue");
+                //$("this").css("backgroundColor","red");
+                //$("this").nextAll().css("backgroundColor","yellow");
+
+                $(this).prevAll().css("backgroundColor", "yellow").end().nextAll().css("backgroundColor", "blue");
+            });
+        });
+    </script>
+</head>
+<body>
+<ul>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+    <li>sadasd</li>
+</ul>
+
+</body>
+</html>

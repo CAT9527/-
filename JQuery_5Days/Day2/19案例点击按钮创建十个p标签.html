@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    div {
+      width: 300px;
+      height: 200px;
+      border: 1px dashed red;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    //标签：节点node,元素element,对象object
+    $(function () {
+      $("#btn").click(function () {
+        for (var i = 0; i < 10; i++) {
+          //$("#dv").append($("<p>哦买尬的,我竟然没想到</p>"));
+          $("<p>哦买尬的,我竟然没想到</p>").appendTo($("#dv"));
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<div id="dv"></div>
+
+</body>
+</html>

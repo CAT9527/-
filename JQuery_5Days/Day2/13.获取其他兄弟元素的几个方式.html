@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="jquery-1.12.1.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                //获取当前元素的前一个兄弟元素
+                //$("#four").prev().css("backgroundColor","blue");
+                //获取当前元素的全部兄弟元素
+                //$("#four").prevAll().css("backgroundColor", "blue");
+                //获取当前元素的后面一个兄弟元素
+                //$("#four").next().css("backgroundColor", "blue");
+                //获取当前元素的后面所有兄弟元素
+                //$("#four").nextAll().css("backgroundColor", "blue");
+                //获取当前元素的父亲元素
+                //$("#four").parent().css("backgroundColor", "blue");
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn">
+<div id="dv">
+    <ul id="uu">
+        <li></li>
+        <li id = "four"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+</body>
+</html>

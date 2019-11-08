@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>索引选择器</title>
+</head>
+<body>
+<input type="button" value = "显示效果" id = "btn">
+<ul id="uu">
+    <li>21321312</li>
+    <li>21321312</li>
+    <li>21321312</li>
+    <li>21321312</li>
+    <li>21321312</li>
+    <li>21321312</li><li>21321312</li>
+    <li>21321312</li><li>21321312</li>
+    <li>21321312</li><li>21321312</li>
+    <li>21321312</li><li>21321312</li>
+    <li>21321312</li>
+</ul>
+<script src="jquery-1.12.1.js"></script>
+
+<script>
+    //:eq(索引值)---相对应的元素
+    //:lt(索引值)---小于索引值的所有元素
+    //:gt(索引值)---大于索引值的所有元素
+
+
+    //点击按钮显示效果
+    $("#btn").click(function(){
+        //索引选择器
+        //$("#uu>li:eq(2)").css("backgroundColor","blue");
+        //$("#uu>li:lt(2)").css("backgroundColor","blue");
+        //$("#uu>li:eq(2)").css("backgroundColor","blue");
+
+        //大于5的所有元素之后，从索引值0开始，再找3个元素
+        //而不是大于5又小于3的值
+        $("#uu>li:gt(5):lt(3)").css("backgroundColor","blue");
+    });
+</script>
+</body>
+</html>
