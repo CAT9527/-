@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <style>
+    div{
+      width: 200px;
+      height: 100px;
+      border: 2px solid green;
+    }
+    p{
+      width: 150px;
+      height: 50px;
+      border: 1px solid red;
+      cursor: pointer;
+    }
+  </style>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    //点击按钮为div中的p标签绑定事件
+    $(function () {
+      $("#btn").click(function () {
+        //为父级元素绑定事件,父级元素代替子级元素绑定事件
+        //子级元素委托父级绑定事件
+
+        //父级元素调用方法,为子级元素绑定事件
+        $("#dv").delegate("p","click",function () {
+          alert("啊!~,被点了");
+        });
+      });
+    });
+
+    //为元素绑定事件三种方式
+    /*
+    * 对象.事件名字(事件处理函数);---$("#btn").click(function(){});
+    * 对象.bind("事件名字",事件处理函数);---$("#btn").bind("click",function(){});
+    * 父级对象.delegate("子级元素","事件名字",事件处理函数);---->$("#dv").delegate("p","click",function(){});
+    *
+    *
+    * */
+  </script>
+</head>
+<body>
+<input type="button" value="为div绑定事件" id="btn" />
+<div id="dv">
+  <p>这是p</p>
+</div>
+</body>
+</html>

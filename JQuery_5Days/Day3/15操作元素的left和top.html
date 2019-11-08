@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: indianred;
+
+            position: absolute;
+            left: 100px;
+            top: 200px;
+        }
+    </style>
+    <script src="jquery-1.12.1.js"></script>
+    <script>
+        //点击按钮,设置div的left和top的值是原来的2倍
+        $(function () {
+            $("#btn").click(function () {
+                //获取left和top  ---获取的仍然是字符串类型
+                //var l=$("#dv").css("left");
+                //var t=$("#dv").css("top");
+                ////console.log(l);
+                //var left1=parseInt(l)*2;
+                //var top1=parseInt(t)*2;
+                //$("#dv").css("left",left1+"px");
+                //$("#dv").css("left",top1+"px");
+
+
+                //该方法获取的是一个对象,该对象中有两个属性,left和top
+                //left和top包含left和margin-left和top和margin-top的值
+                //console.log($("#dv").offset().left);
+
+                // $("#dv").css("left", $("#dv").offset().left * 2);
+                // $("#dv").css("top", $("#dv").offset().top * 2);
+
+                $("#dv").css({"left": $("#dv").offset().left * 2, "top": $("#dv").offset().top * 2});
+                $("#dv").offset({"left": 500, "top": 250});
+            });
+        });
+
+
+        /*
+        * 可以设置,也可以获取
+        * .width()是元素的宽
+        * .height()是元素的高
+        *
+        * .offset()--->获取的是对象,可以设置,也可以获取
+        * .offset({"left":值,"top":值});设置
+        *
+        *
+        * */
+
+    </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+<div id="dv"></div>
+
+</body>
+</html>

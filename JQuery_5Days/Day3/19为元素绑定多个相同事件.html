@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <script src="jquery-1.12.1.js"></script>
+  <script>
+    $(function () {
+      //为按钮绑定多个相同事件
+     // $("#btn").click(function () {
+     //   console.log("小苏好猥琐哦");
+     // }).click(function () {
+     //   console.log("小苏好美啊");
+     // }).click(function () {
+     //   console.log("天冷了,注意身体");
+     // });
+
+     $("#btn").bind("click",function () {
+       console.log("哈哈,我又变帅了");
+     }).bind("click",function () {
+       console.log("我轻轻来,正如我轻轻走,挥一挥手,不带走一个妹子");
+     });
+
+      //bind方法绑定多个相同的事件的时候,如果使用的是键值对的方式,只能执行最后一个
+      // $("#btn").bind({"click":function () {
+      //   console.log("如果有一天我邪恶了");
+      // },"click":function () {
+      //   console.log("请记住,我曾纯洁过");
+      // }});
+
+    });
+
+    //bind方法内部是调用的另一个方法绑定的事件
+
+  </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn"/>
+
+</body>
+</html>

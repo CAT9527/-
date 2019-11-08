@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 600px;
+            height: 450px;
+            border: 1px solid red;
+        }
+    </style>
+    <script src="jquery-1.12.1.js"></script>
+    <script>
+        var arr = [
+            {"name": "哔哩哔哩", "href": "https://www.bilibili.com/"},
+            {"name": "哔哩哔哩", "href": "https://www.bilibili.com/"},
+            {"name": "哔哩哔哩", "href": "https://www.bilibili.com/"},
+            {"name": "哔哩哔哩", "href": "https://www.bilibili.com/"},
+            {"name": "哔哩哔哩", "href": "https://www.bilibili.com/"},
+            {"name": "哔哩哔哩", "href": "https://www.bilibili.com/"}
+        ];
+
+
+        //页面加载
+        $(function () {
+            //点击按钮
+            $("#btn").click(function () {
+                var table = $("<table border='1' cellspacing='1' cellpadding='2' style = 'cursor: pointer;'></table>");
+
+                //把表格加入div种
+                $("#dv").append(table);
+                //循环遍历数组，创建行
+                for (var i = 0; i < arr.length; i++) {
+                    var dt = arr[i];
+                    //创建行，并加入table种
+                    var tr = $("<tr></tr>");
+                    table.append(tr);
+
+                    //在列中显示内容，列在行中
+                    //创建td，并加入到tr中
+                    var td1 = $("<td>" + dt.name + "</td>");
+                    td1.appendTo(tr);
+                    var td2 = $("<td><a href='" + dt.href + "'>" + dt.name + "</a></td>");
+                    td2.appendTo(tr);
+
+                    //鼠标进入每一行，该行有高亮效果
+                    tr.mouseenter(function () {
+                        $(this).css("backgroundColor","blue");
+                    }).mouseleave(function () {
+                        $(this).css("backgroundColor", "");
+                    });
+                }
+            });
+
+            //移除表格
+            $("#btn2").click(function(){
+                //$(this).next().empty();
+                //$("#dv").empty();
+
+                $("#dv").children("table").remove();
+            });
+
+            $("#btn3").click(function(){
+                $("<tr><td>腾讯</td><td><a href='www.tengxun.com'>腾讯</a></td></tr>>").appendTo($("#dv>table"));
+            });
+        });
+    </script>
+</head>
+<body>
+
+<input type="button" value="创建一个表格" id="btn"/>
+<input type="button" value="移除表格" id="btn2"/>
+<input type="button" value="添加一行" id="btn3"/>
+<div id="dv"></div>
+</body>
+</html>

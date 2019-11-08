@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+        }
+    </style>
+    <script src="jquery-1.12.1.js"></script>
+    <script>
+        //元素创建的几种方式
+        $(function () {
+            //1.可以创建多个
+            // $("#btn").click(function () {
+            //     $("<input type='button' value='按钮'>").appendTo($("#dv"));
+            //     console.log("点击了");
+            // });
+
+            //2.只能反复创建一个
+            $("#btn").click(function () {
+                $("#dv").html("<input type='button' value='按钮'>");
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="显示效果" id="btn">
+<div id="dv">
+
+</div>
+</body>
+</html>
