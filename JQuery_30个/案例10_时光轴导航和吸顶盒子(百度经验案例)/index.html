@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时光轴导航和吸附盒子</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #header {
+            width: 1071px;
+            height: 654px;
+            margin: 0 auto;
+        }
+
+        #content {
+            width: 1071px;
+            height: 2000px;
+            margin: 10px auto;
+        }
+
+        #main {
+            width: 680px;
+            height: 2000px;
+            font-family: "微软雅黑";
+        }
+
+        #main h2 {
+            font-weight: normal;
+            font-size: 22px;
+            color: rgba(50, 50, 50);
+            line-height: 40px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #main ol {
+            margin: 20px 0 0 18px;
+        }
+
+        #main ol li {
+            width: 630px;
+            border-left: 2px dotted #ddd;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        #main ol li .main_step {
+            width: 32px;
+            height: 32px;
+            background-image: url("img/step.png");
+            background-position: 0 -34px;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+            position: absolute;
+            left: -16px;
+        }
+
+        #main ol li .on {
+            background-position: 0 0;
+        }
+
+        #main ol li p {
+            line-height: 25px;
+            margin-bottom: 15px;
+        }
+
+        #main ol li img {
+            padding-bottom: 30px;
+            display: block;
+        }
+
+        #top {
+            width: 100%;
+            height: 40px;
+            min-width: 1071px;
+            background: url("img/top.png") center;
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            border-bottom: 1px solid #ddd;
+            border-shadow: 0 2px 5px #ddd;
+        }
+
+        #slide {
+            width: 32px;
+            position: fixed;
+            top: 42px;
+            margin-left: 4px;
+            background: #fff;
+        }
+
+        #slide ul li {
+            width: 32px;
+            height: 32px;
+            background: url(img/step.png);
+            background-position: 0 32px;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+            display:none;
+            cursor:pointer;
+        }
+
+        #slide ul .on,#slide ul.hover {
+            background-position: 0px 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <img src="img/header.png" alt="">
+</div>
+<div id="top">
+</div>
+<div id="content">
+    <div id="main">
+        <h2>方法/步骤</h2>
+        <ol>
+            <li>
+                <div class="main_step on">1</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/1.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">2</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/2.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">3</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/3.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">4</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/4.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">5</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/5.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">6</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/6.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">7</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/7.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">8</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/8.jpg"/>
+            </li>
+            <li>
+                <div class="main_step">9</div>
+                <p>试用后油法，将面团揉成团，面包机30分钟即可！牛奶要用凉的，因为面包机揉面温度较高！</p>
+                <img src="img/9.jpg"/>
+            </li>
+        </ol>
+        <div id="slide">
+            <ul>
+                <li class="on">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script>
+
+    $(function () {
+        var $top = $("#top");
+        var $step = $(".main_step");
+        var stepLength = $step.length;
+        var $slideLi = $("#slide ul li");
+        //页面滚动
+        $(window).scroll(function () {
+            //获取滚动高度
+            var scrollTop = $(document).scrollTop();
+
+            //当滚动高度大于150时，顶部导航栏固定在最高，且不变
+            // if(scrollTop>=150){
+            //     $top.show();
+            // }else{
+            //     $top.hide();
+            // }
+            scrollTop >= 150 ? $top.show() : $top.hide();
+
+            $step.each(function (i) {
+
+                //当前元素到文档顶部的距离
+                var a = $(this).offset().top - $(document).scrollTop();
+                if (a < (42 + 32 * i)) {
+                    $slideLi.eq(i).show();
+                    index = i;
+                }else{
+                    $slideLi.eq(i).hide();
+                }
+                $step.eq(index).addClass('on').parent().siblings().find('.main_step').removeClass('on');
+                index && $slideLi.eq(index-1).addClass('on').siblings().removeClass('on');
+            });
+            $slideLi.click(function(){
+                var index = $(this).index();
+                $('body,html').animate({
+                    scrollTop : $step.eq(index).offset().top
+                },500);
+            }).hover(function(){
+                $(this).addClass('hover');
+            },function(){
+                $(this).removeClass('hover');
+            });
+        });
+
+    });
+</script>
+</body>
+</html>

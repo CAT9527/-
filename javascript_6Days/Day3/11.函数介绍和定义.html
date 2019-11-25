@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,14 +16,13 @@
         * 函数名();
         * */
 
-        function cook() {
-            console.log("A");
-            console.log("B");
-            console.log("C");
-        }
+       
 
-        cook();
-        cook();
+         //多加了一个sum的声明，但是这个sum是undefined，未赋值
+        console.log(sum(1,2));       //所以在这行当作函数使用时，会直接报错
+        var sum = function(num1,num2){
+            return num1+num2;
+        }
 
     </script>
 </head>

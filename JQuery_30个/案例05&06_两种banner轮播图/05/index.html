@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #banner {
+            width: 520px;
+            height: 280px;
+            margin: 20px auto;
+            border: 1px solid red;
+            position: relative;
+        }
+
+        #banner .pic {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            /*添加这个属性，隐藏li超出的宽度*/
+        }
+
+        #banner .pic ul {
+            /*需要设置父ul的宽度，这样li才能浮动在同一行*/
+            width: 10000px;
+            overflow: hidden;
+            margin-left: -520px;
+        }
+
+        #banner .pic ul li {
+            float: left;
+        }
+
+        /*小圆点*/
+        #banner .tab {
+            width: 70px;
+            height: 14px;
+            background: #fff; /*兼容代码,ie678不兼容rgba*/
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            left: 50%;
+            margin-left: -35px; /*一般都是会移多的，所以要再减一下,当前元素宽度的一半*/
+            bottom: 10px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        #banner .tab ul li {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: #999;
+            float: left;
+            margin: 2px 2px;
+        }
+
+        /*小问题：#banner .tab ul li .on 多一个标签时无法选中on*/
+        #banner .tab ul .on {
+            background: #f60;
+        }
+
+        #banner .btn {
+            display: none;
+        }
+
+        #banner .btn div {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 0, 0, 0.3);
+            color: #fff;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
+
+        #leftBtn {
+            left: 5px;
+        }
+
+        #rightBtn {
+            right: 5px;
+        }
+
+        #banner .btn .hover {
+            background: #36363a;
+        }
+    </style>
+</head>
+<body>
+<div id="banner">
+    <div class="pic">
+        <ul>
+            <li><a href=""></a><img src="img/5.jpg" alt=""></li>
+            <li><a href=""></a><img src="img/1.jpg" alt=""></li>
+            <li><a href=""></a><img src="img/2.jpg" alt=""></li>
+            <li><a href=""></a><img src="img/3.jpg" alt=""></li>
+            <li><a href=""></a><img src="img/4.jpg" alt=""></li>
+            <li><a href=""></a><img src="img/5.jpg" alt=""></li>
+            <li><a href=""></a><img src="img/1.jpg" alt=""></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <ul>
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="btn">
+        <div id="leftBtn" class="hover">＜</div>
+        <div id="rightBtn">＞</div>
+    </div>
+</div>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script>
+    $(function () {
+
+        var $tabLi = $("#banner .tab li");  //1.一般都用这种方式存储选中元素
+        var $picUl = $("#banner .pic ul");  //获取ul
+        var imgWidth = $("#banner .pic li").width();//获取单张图片宽度
+        var $banner = $("#banner");
+        var $btn = $("#banner .btn");
+        var $btnDiv = $("#banner .btn div");
+        var index = 0;
+        var nowTime = new Date();
+
+        $tabLi.click(function () {
+            index = $(this).index();  //得到同级内，该点击元素得序列号
+
+            //2.jq方法：addClass("className"),添加选择器
+            // siblings(),选中同级兄弟元素
+            // removeClass("className"),移除选择器
+            $(this).addClass("on").siblings().removeClass("on");
+            $picUl.animate({
+                marginLeft: -imgWidth * (index + 1) + "px"
+            }, 500);
+        });
+
+        //3.hover()方法,两个参数，一个是鼠标移入元素的事件方法，第二个是鼠标移出元素的方法
+        $banner.hover(function () {
+            $btn.show();
+            clearInterval(timer);
+        }, function () {
+            $btn.hide();
+            timer = setInterval(function () {
+                index++;
+                fn();
+            }, 5000);
+        });
+
+        $btnDiv.hover(function () {
+            $(this).addClass("hover");
+        }, function () {
+            $(this).removeClass("hover");
+        }).click(function () {
+            //制作定时器，约束点击过快导致的bug
+            if (new Date() - nowTime > 300) {
+                nowTime = new Date();
+
+                var i = $(this).index();  //只有两个的话，i的取值是0和1，0代表左按钮，1代表右按钮
+                // if (i) {
+                //     index++;
+                // } else {
+                //     index--;
+                // }
+                i ? index++ : index--;
+                fn();
+            }
+        }).mousedown(function () {
+            //清除按钮的默认事件，比如复制等等
+            return false;
+        });
+
+        //自动播放,使用定时器实现
+        var timer = setInterval(function () {
+            index++;
+            fn();
+        }, 1000);
+
+        function fn() {
+            var liIndex = index;
+            if (liIndex >= $tabLi.length) {
+                liIndex = 0;
+            } else if (liIndex < 0) {
+                liIndex = $tabLi.length - 1;
+            }
+            //4.eq()方法将匹配元素集缩减值指定 index 上的一个
+            $tabLi.eq(liIndex).addClass("on").siblings().removeClass("on");
+
+            $picUl.animate({
+                marginLeft: -imgWidth * (index + 1) + "px"
+            }, 300, function () {
+                if (index == $tabLi.length) {
+                    $picUl.css('marginLeft', -imgWidth + "px");
+                    index = 0;
+                } else if (index < 0) {
+                    $picUl.css('marginLeft', -imgWidth * ($tabLi.length) + "px");
+                    index = $tabLi.length - 1;
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

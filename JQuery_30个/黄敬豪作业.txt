@@ -1,0 +1,176 @@
+1.mouseenter 和 mouseover 的区别
+不论鼠标指针穿过被选元素或其子元素，都会触发 mouseover 事件。
+只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件。
+
+2.用正则表达式匹配字符串，以字母开头，后面是数字、字符串或者下划线，长度为 9 - 20
+/^[a~zA~Z]\w{9,20}$/
+
+3.写一个手机号码校验方法
+function checkPhone(){
+    var phone = document.getElementById('phone').value;
+    if(!(/^((13[0-9])|(14[5,7,9])|(15([0-3]|[5-9]))|(166)|(17[0,1,3,5,6,7,8])|(18[0-9])|(19[8|9]))\\d{8}$/.test(phone))){
+        alert("手机号码有误，请重填");
+    }
+}
+
+4.js 字符串两边截取空白的 trim 的原型方法的实现
+String.prototype.trim = function(){
+　　return this.replace(/(^\s*)|(\s*$)/g,'');
+}
+
+5.线程与进程的区别 ？
+地址空间：同一进程的线程共享本进程的地址空间，而进程之间则是独立的地址空间。
+资源拥有：同一进程内的线程共享本进程的资源如内存、I/O、cpu等，但是进程之间的资源是独立的。
+
+    一个进程崩溃后，在保护模式下不会对其他进程产生影响，但是一个线程崩溃整个进程都死掉。所以多进程要比多线程健壮。进程切换时，消耗的资源大，效率高。所以涉及到频繁的切换时，使用线程要好于进程。同样如果要求同时进行并且又要共享某些变量的并发操作，只能用线程不能用进程
+
+执行过程：每个独立的进程程有一个程序运行的入口、顺序执行序列和程序入口。但是线程不能独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。
+线程是处理器调度的基本单位，但是进程不是。
+两者均可并发执行。
+
+
+6.下面的输出结果是 ？
+var out = 25,
+   inner = {
+        out: 20,
+        func: function () {
+            var out = 30;
+            return this.out;
+        }
+    };
+console.log((inner.func, inner.func)());
+console.log(inner.func());
+console.log((inner.func)());
+console.log((inner.func = inner.func)());
+
+7.下面程序输出的结果是 undefined
+
+if (!("a" in window)) {
+    var a = 1;//这个是局部变量
+}
+alert(a);  //所要的是全局变量a的值，但是并没有a的声明并赋值，所以undefined
+
+8.下面程序输出的结果是1
+var a = 1;
+var b = function a(x) {
+  x && a(--x);
+};
+alert(a);
+//以先赋值的那个变量为主
+
+9.下面程序输出的结果是a()
+function a(x) {
+    return x * 2;
+}
+var a;
+alert(a);
+//不是undefined，是a()方法体
+
+10.下面程序输出的结果是 10
+
+function b(x, y, a) {
+        arguments[2] = 10;
+        alert(a);
+}
+b(1, 2, 3);
+//传入3，但是argument参数数值，argument[2] = 10;,3--》10
+
+11.输出结果，为什么？
+var a = 4;
+function b() {
+  a = 3;
+  console.log(a);
+  function a(){};
+}
+b();
+//输出为3，因为a在b方法里面两次重新赋值，但是输出语句在a = 3之后，所以输出结果是3.取最后一个赋予a的值
+
+12.输出结果，为什么？
+var baz = 3;
+var bazz ={
+  baz: 2,
+  getbaz: function() {
+    return this.baz
+  }
+}
+console.log(bazz.getbaz());
+var g = bazz.getbaz;
+console.log(g()) ;
+//输出为2  3.
+//第一个bazz.getbaz(),里面的baz重新赋值为2，返回2
+//第二个var g = bazz.getbaz; 变量g只存放了bazz的getbaz，没有存放baz：2；输出g(),里面的baz不是指向与局部变量baz，而是指向全局变量baz = 3
+
+13.输出结果，为什么？
+var arr = [1,2,3,4,5];
+for(var i = 0; i < arr.length; i++){
+  arr[i] = function(){
+    alert(i);
+  };
+}
+arr[3]();
+//输出为5
+
+
+14.讲一下 1 和 Number(1) 的区别
+第一个只是把1转换为数字类型，而第二个，是把 1 包装 成了一个对象.区别就是原始类型和包装对象的区别
+
+15.把节点列表 (NodeList) 转换为数组
+function ConvertToArray(nodes){
+    var array=null;
+    try{
+        array=Array.prototype.slice.call(nodes,0);//非ie浏览器  ie8-将NodeList实现为COM对象，不能用这种方式检测
+    }catch(ex){//ie8-
+        array=new Array();
+        for(var i=0;i<nodes.length;i++){
+            array.push(nodes[0]);
+        }
+    }
+return array;
+}
+
+
+16.打乱数组元素的顺序
+ function randomArray(arr) {
+        var sum = [];
+        while(sum.length < arr.length) {
+            var a = parseInt(Math.random() * (arr.length));
+            var index = sum.indexOf(a);
+            if (index < 0) {
+                sum.push(a);
+            }
+        }
+        var newArr = new Array();
+        for (var i = 0; i < sum.length; i++) {
+            newArr.push(arr[sum[i]]);
+        }
+        return newArr;
+ }
+
+
+17.js 的 ready 和 onload 事件的区别
+
+onload是等HTML的所有资源都加载完成后再执行onload里面的内容，所有资源包括DOM结构，图片，视频等资源；
+ready是当DOM结构加载完成后就可以执行了，相当于jQuery中的$(function(){js代码});
+另外，onload只能有一个，ready可以有多个。
+
+18.问题：想每次点击对应目标时弹出对应的数字下标 0~4 ，但实际是无论点击哪个目标都会弹出数字 5。
+
+function onMyLoad() {
+  var arr = document.getElementsByTagName("p");
+  for (var i = 0; i < arr.length; i++) {
+    arr[i].onclick = function () {
+      alert(i);
+    }
+  }
+}
+
+修改代码：
+function onMyLoad() {
+    var arr = document.getElementsByTagName("p");
+    for (var i = 0; i < arr.length; i++) {
+        arr[i].num = i;//将i值赋值给arr[i]的属性num
+        arr[i].onclick = function () {
+            console.log(this.num);//调用arr[i]的num属性
+        }
+    }
+}

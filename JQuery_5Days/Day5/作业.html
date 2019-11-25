@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+    <script>
+        //1.JS实现继承的多种方法
+        //原型链继承,利用原型让一个引用类型继承另一个引用类型的属性和方法
+        function Father(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        Father.prototype.sayHi=function(){
+            return "nihao";
+        }
+
+        function Son(name) {
+            this.name = name;
+        }
+        Son.prototype = new Father("小明",12);
+
+
+        //2.画一条0.5px的直线
+        //transform: scale(0.5,0.5);
+
+        //3.前端有哪些优化性能的方法？
+        // 将 CSS放在 HEAD中
+        // Image压缩
+        // CSS Sprites
+        //https://www.cnblogs.com/coober/p/8078847.html
+
+
+        //4.JQ和JS的区别
+        //js是一种脚本语言，常用于网页客户端编程，使网页在客户端浏览器中，实现更多地动态功能，表现出更加丰富的视觉效果。
+       // jquery是一个快速、简洁的JavaScript框架，极大的简化了javascript编程
+        //5.前端有哪些兼容性问题
+        //https://www.cnblogs.com/angel648/p/11392262.html
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

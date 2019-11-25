@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+
+<body>
+<!--<p id="p1">倒计时60秒</p>-->
+<!--<input type="button" value="点击" id="btn">-->
+<!--<script>-->
+<!--//2.写一个 三十分钟倒计时，要求刷新不重置-->
+<!--var pObj = document.getElementById("p1");-->
+<!--var btn = document.getElementById("btn");-->
+<!--var sum;-->
+<!--var tmer;-->
+<!--let time = localStorage.getItem("time");-->
+<!--console.log("0"+time);-->
+<!--btn.onclick = function () {-->
+<!--console.log("1"+time);-->
+<!--localStorage.clear();-->
+<!--console.log("2"+time);-->
+<!--if (time == null || time === undefined || time < 0) {-->
+<!--sum = 60;-->
+<!--}-->
+<!--tm();-->
+<!--};-->
+
+<!--if (time == null || time === undefined) {-->
+<!--sum = 60;-->
+<!--} else {-->
+<!--sum = time;-->
+<!--tm();-->
+<!--}-->
+
+<!--function tm() {-->
+<!--tmer = setTimeout(tm, 1000);-->
+<!--sum&#45;&#45;;-->
+<!--pObj.innerHTML = "倒计时" + sum + "秒";-->
+<!--localStorage.setItem("time", sum);-->
+<!--if (sum < 1) {-->
+<!--localStorage.clear();-->
+<!--clearTimeout(tmer);-->
+<!--pObj.innerHTML = "结束计时";-->
+<!--}-->
+<!--}-->
+<button>
+    获取验证码
+</button>
+<script>
+    var but = document.getElementsByTagName("button")[0];
+    var sum;
+    var tmer;
+    let time = localStorage.getItem("time");
+    but.onclick = function () {
+        localStorage.clear();
+        if (time == null || time == undefined || time < 0) {
+            sum = 60;
+        }
+        tm();
+    };
+
+    if (time == null || time == undefined) {
+        sum = 60;
+    } else {
+        sum = time;
+        tm();
+    }
+
+    function tm() {
+        console.log(sum);
+        but.disabled = true;
+        tmer = setTimeout(tm, 1000);
+        sum--;
+        but.innerHTML = sum;
+        localStorage.setItem("time", sum);
+        if (sum < 1) {
+            localStorage.clear();
+            clearTimeout(tmer);
+            but.innerHTML = "重新获取";
+            flag = true;
+            but.disabled = false;
+        }
+    }
+
+
+    console.log("=======================================");
+
+    //3.getRawType方法。 作用：获取数据类型，返回结果为 Number、String、Object、Array等。
+    function getRawType(obj) {
+        var str = Object.prototype.toString.call(obj);
+        str = str.substring(8, str.length - 1);
+        console.log(str);
+    }
+
+    getRawType("你好啊");
+    getRawType(152);
+    getRawType(new Object());
+    getRawType([]);
+
+    console.log("=======================================");
+
+    //4.isPlainObject方法。 作用：判断数据是不是Object类型的数据
+    function isPlainObject(obj) {
+        var bool = Object.prototype.toString.call(obj) == "[object Object]" ? true : false;
+        console.log(bool);
+    }
+
+    isPlainObject("你好啊");
+    isPlainObject(152);
+    isPlainObject(new Object());
+    isPlainObject([]);
+
+    console.log("=======================================");
+
+    //5.max：求取数组中非NaN数据中的最大值
+    function myMax(array) {
+        var max = 0;
+        for (var i = 0; i < array.length; i++) {
+            if (!isNaN(array[i]) && array[i] > max) {
+                max = array[i];
+            }
+        }
+        console.log(max);
+    }
+
+    myMax([12, 52, 0, 15, 22, '23564string', "A", "233", 2, 0]);
+
+    console.log("=======================================");
+
+    //6.min：求取数组中非NaN数据中的最小值
+    function myMin(array) {
+        var min = 0;
+        for (var i = 0; i < array.length; i++) {
+            if (!isNaN(array[i]) && array[i] < min) {
+                min = array[i];
+            }
+        }
+        console.log(min);
+    }
+
+    myMin([12, 52, 0, 15, 22, '23564string', "A", "233", 2, 0]);
+
+    console.log("=======================================");
+
+    //7.random：返回一个lower - upper之间的随机数
+    function myRandom(lower, upper) {
+        if (upper < lower) {
+            var temp = upper;
+            upper = lower;
+            lower = temp;
+        }
+
+        if (!isNaN(lower) && !isNaN(upper)) {
+            return Math.random() * (upper - lower) + lower;
+        } else {
+            return "有非数字，不能比较";
+        }
+    }
+
+    console.log(myRandom(5, 1));
+    console.log(myRandom(1, "sada"));
+</script>
+
+
+</body>
+</html>

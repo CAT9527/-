@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style></style>
+</head>
+<body>
+<a href="#">你好</a>
+<p>21321312</p>
+<p>21321312</p>
+<p>21321312</p>
+<p>21321312</p>
+<p>21321312</p>
+<script>
+    /*
+     1.mouseenter 和 mouseover 的区别
+     不论鼠标指针穿过被选元素或其子元素，都会触发 mouseover 事件。
+     只有在鼠标指针穿过被选元素时，才会触发 mouseenter 事件
+    */
+
+    //2.用正则表达式匹配字符串，以字母开头，后面是数字、字符串或者下划线，长度为 9 - 20
+    //
+
+    //3.写一个手机号码校验方法
+
+    //4.js 字符串两边截取空白的 trim 的原型方法的实现
+
+    /*
+    地址空间：同一进程的线程共享本进程的地址空间，而进程之间则是独立的地址空间。
+    资源拥有：同一进程内的线程共享本进程的资源如内存、I/O、cpu等，但是进程之间的资源是独立的。
+　　　　　    一个进程崩溃后，在保护模式下不会对其他进程产生影响，但是一个线程崩溃整个进程都死掉。所以多进程要比多线程健壮。
+
+　　　　　进程切换时，消耗的资源大，效率高。所以涉及到频繁的切换时，使用线程要好于进程。同样如果要求同时进行并且又要共享某些变量的并发操作，只能用线程不能用进程
+
+执行过程：每个独立的进程程有一个程序运行的入口、顺序执行序列和程序入口。但是线程不能独立执行，必须依存在应用程序中，由应用程序提供多个线程执行控制。
+线程是处理器调度的基本单位，但是进程不是。
+两者均可并发执行。
+    */
+    //6.下面的输出结果是 ？
+    // var out = 25,
+    //     inner = {
+    //         out: 20,
+    //         func: function () {
+    //             var out = 30;
+    //             //console.log("返回out值："+this.out);
+    //             return this.out;  //这个this指向inner
+    //         }
+    //     };
+    // console.log((inner.func, inner.func)());//25
+    // console.log(inner.func());//20,直接返回this.out，即是inner里面一层的out值
+    // console.log((inner.func)());//20
+    // console.log((inner.func = inner.func)());//25
+    /*
+    5.线程与进程的区别 ？
+    7.下面程序输出的结果是 ？
+*/
+
+    // if (!("a" in window)) {
+    //     var a = 1;
+    // }
+    // alert(a);
+
+
+    function randomArray(arr) {
+        var sum = [];
+        while(sum.length < arr.length) {
+            var a = parseInt(Math.random() * (arr.length));
+            var index = sum.indexOf(a);
+            if (index < 0) {
+                sum.push(a);
+            }
+        }
+        var newArr = new Array();
+        for (var i = 0; i < sum.length; i++) {
+            newArr.push(arr[sum[i]]);
+        }
+        return newArr;
+    }
+    //
+    var n = [1, 2, 3, 15, 62, 2];
+    var m = randomArray(n);
+    console.log(m);
+    //alert(a);
+    /*
+        8.下面程序输出的结果是 ？
+
+        var a = 1;
+        var b = function a(x) {
+          x && a(--x);
+        };
+        alert(a);
+
+        9.下面程序输出的结果是 ？
+
+        function a(x) {
+            return x * 2;
+        }
+        var a;
+        alert(a);
+
+        10.下面程序输出的结果是 ？
+
+        function b(x, y, a) {
+                arguments[2] = 10;
+                alert(a);
+        }
+        b(1, 2, 3);
+
+        11.输出结果，为什么？
+        var a = 4;
+        function b() {
+          a = 3;
+          console.log(a);
+          function a(){};
+        }
+        b();
+
+        12.输出结果，为什么？
+        var baz = 3;
+        var bazz ={
+          baz: 2,
+          getbaz: function() {
+            return this.baz
+          }
+        }
+        console.log(bazz.getbaz())
+        var g = bazz.getbaz;
+        console.log(g()) ;
+
+        13..输出结果，为什么？
+        var arr = [1,2,3,4,5];
+        for(var i = 0; i < arr.length; i++){
+          arr[i] = function(){
+            alert(i)
+          }
+        }
+        arr[3]();
+
+        14.讲一下 1 和 Number(1) 的区别
+        15.把节点列表 (NodeList) 转换为数组
+        16.打乱数组元素的顺序
+        17.js 的 ready 和 onload 事件的区别
+
+        18.问题：想每次点击对应目标时弹出对应的数字下标 0~4 ，但实际是无论点击哪个目标都会弹出数字 5。
+
+        function onMyLoad() {
+          var arr = document.getElementsByTagName("p");
+          for (var i = 0; i < arr.length; i++) {
+            arr[i].onclick = function () {
+              alert(i);
+            }
+          }
+        }
+       如何解决？
+       * */
+</script>
+
+</body>
+</html>

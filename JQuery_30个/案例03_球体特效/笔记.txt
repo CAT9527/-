@@ -1,0 +1,20 @@
+1.将body图片覆盖整个浏览器页面；需要同时设置html和body 高度都是100%，即是：
+html{
+    height: 100%;
+}
+body{
+    background: url("../img/bg.png") no-repeat center;
+    height:100%;
+}
+
+2.append方法：可以在父元素种追加新元素
+
+3.3D效果必要的
+transfrom-style:preserve-3d;//变换风格：3D，给需要变3D效果的元素的父元素添加这个属性
+perspective:800px;//景深
+
+4.$()可以传一个选择器，表示选中元素
+  但也可以传html标签，并变成一个jq对象
+  $('<li></li>')--->创建一个li节点，把这个节点变成jq对象
+
+5.transition:时间（s）;
