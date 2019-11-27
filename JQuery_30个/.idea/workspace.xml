@@ -1,183 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cec25c1d-af51-4cab-8bfe-03e82171565c" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/作业.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/js/jquery-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例01_网格特效/笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/js/jquery-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/transition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例02_螺旋特效/笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/js/jquery-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/transition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例03_球体特效/笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/js/jquery-2.2.0.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/transition.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例04_球体特效 表格特效/笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/05/js/jquery-1.12.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例05&amp;06_两种banner轮播图/06/js/jquery-1.12.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/nav.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/img/nav_cho.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/js/jquery-1.12.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例07_全屏滚动特效/js/jquery.mousewheel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img1/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img1/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img1/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img1/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/img1/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例08_淘宝放大镜效果/js/jquery-1.12.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例09_照片墙01 拖拽相册/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/step.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/img/top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例10_时光轴导航和吸顶盒子(百度经验案例)/js/jquery-1.12.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/20.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/21.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/22.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/23.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/24.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/img/big/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/案例11_照片墙02 css3+jq/js/jquery-1.12.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/笔记/轮播图笔记.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/黄敬豪作业.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/作业.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/background_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/bullet1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/bz.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/dd.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/enemy1_fly_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/enemy2_fly_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/enemy3_fly_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/ks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/my.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/xx.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/zz.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/中飞机爆炸.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/大飞机爆炸.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/小飞机爆炸.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/开始背景.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/我的飞机.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/image/本方飞机爆炸.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/飞机大战/js/myJs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javascript_6Days/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JQuery_5Days/Day5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JQuery_5Days/Day5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../javascript_6Days/Day3/11.函数介绍和定义.html" beforeDir="false" afterPath="$PROJECT_DIR$/../javascript_6Days/Day3/11.函数介绍和定义.html" afterDir="false" />
-    </list>
+    <list default="true" id="cec25c1d-af51-4cab-8bfe-03e82171565c" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -191,13 +15,14 @@
     <session id="-141296343">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.114" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -260,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/作业.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="1920">
               <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="78" selection-end-column="5" />
             </state>
           </provider>
@@ -270,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/黄敬豪作业.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="218">
-              <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+              <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -335,11 +160,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-121" />
-    <option name="y" value="-15" />
-    <option name="width" value="1620" />
-    <option name="height" value="1039" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="349" />
+    <option name="width" value="1578" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="添加" />
@@ -417,16 +241,17 @@
       <workItem from="1574661196540" duration="10880000" />
       <workItem from="1574682852764" duration="5573000" />
       <workItem from="1574691464475" duration="2585000" />
+      <workItem from="1574737803021" duration="183000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65759000" />
+    <option name="totallyTimeSpent" value="65942000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="349" y="0" width="1578" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09799789" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.097402595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -669,20 +494,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/笔记/轮播图笔记.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/作业.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
+        <state relative-caret-position="1920">
           <caret line="64" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="78" selection-end-column="5" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/笔记/轮播图笔记.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/黄敬豪作业.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
-          <caret line="134" column="40" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
+          <caret line="134" column="40" selection-start-line="134" selection-start-column="40" selection-end-line="134" selection-end-column="40" />
         </state>
       </provider>
     </entry>
